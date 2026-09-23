@@ -64,21 +64,6 @@
   {
     "rank": 5,
     "isPrimary": false,
-    "name": "全球云",
-    "slug": "quanqiu-cloud",
-    "inviteURL": "https://sswdh.gcvipaff.com/#/?code=Ys0xKqnU",
-    "ctaText": "使用优惠码查看当前套餐",
-    "coupon": "qq88",
-    "couponNote": "专享8折优惠码",
-    "priceFrom": "20元/月",
-    "trafficFrom": "120GB/月",
-    "suitableFor": "4K影音、ChatGPT/Claude AI专线、多设备办公",
-    "summary": "全BGP中转/IEPL专线节点，原生IP解锁，高稳定低延迟。",
-    "lastChecked": "2026-09-23"
-  },
-  {
-    "rank": 6,
-    "isPrimary": false,
     "name": "隐形人",
     "slug": "invisible",
     "inviteURL": "https://varnexa.invisibleaff.com/#/?code=FlyoraeM",
@@ -91,7 +76,7 @@
     "lastChecked": "2026-09-23"
   },
   {
-    "rank": 7,
+    "rank": 6,
     "isPrimary": false,
     "name": "浪网",
     "alternateName": "WaveNet",
@@ -106,7 +91,7 @@
     "lastChecked": "2026-09-23"
   },
   {
-    "rank": 8,
+    "rank": 7,
     "isPrimary": false,
     "name": "梯子云",
     "alternateName": "LadderCloud",
@@ -121,7 +106,7 @@
     "lastChecked": "2026-09-23"
   },
   {
-    "rank": 9,
+    "rank": 8,
     "isPrimary": false,
     "name": "飞V",
     "slug": "flyv",
@@ -132,6 +117,21 @@
     "trafficFrom": "120GB/月",
     "suitableFor": "高效备用、多节点轮换",
     "summary": "具有丰富的多国家节点轮换，适合建立高可用备用方案。",
+    "lastChecked": "2026-09-23"
+  },
+  {
+    "rank": 9,
+    "isPrimary": false,
+    "name": "全球云",
+    "slug": "quanqiu-cloud",
+    "inviteURL": "https://sswdh.gcvipaff.com/#/?code=Ys0xKqnU",
+    "ctaText": "使用优惠码查看当前套餐",
+    "coupon": "qq88",
+    "couponNote": "专享8折优惠码",
+    "priceFrom": "20元/月",
+    "trafficFrom": "120GB/月",
+    "suitableFor": "4K影音、ChatGPT/Claude AI专线、多设备办公",
+    "summary": "全BGP中转/IEPL专线节点，原生IP解锁，高稳定低延迟。",
     "lastChecked": "2026-09-23"
   },
   {
