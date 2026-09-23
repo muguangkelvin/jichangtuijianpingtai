@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section>
+  <div class="breadcrumbs">
+    <a href="/">首页</a> &gt; <span>常见排错与 FAQ 解答中心 (100)</span>
+  </div>
+
+  <h1>常见排错与 FAQ 问答解答中心</h1>
+  <p style="color:#555;">包含 100 项涵盖 Clash、Sing-box、Shadowrocket 客户端配置，节点超时排查，TUN 模式无法联网及防失联等常见问题：</p>
+
+  <div class="faq-list">
+    {{ range .Pages }}
+    <div style="border-bottom:1px dashed #ccc; padding:12px 0;">
+      <h3 style="font-size:1.1rem; margin:0 0 6px 0;">
+        <a href="{{ .RelPermalink }}" style="color:#0056b3; text-decoration:none;">❓ {{ .Title }}</a>
+      </h3>
+      <p style="font-size:0.9rem; color:#444; margin:0 0 5px 0;">{{ .Summary | plainify | truncate 120 }}</p>
+      <a href="{{ .RelPermalink }}" style="font-size:0.85rem; color:#0056b3;">查看完整解答 &rarr;</a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

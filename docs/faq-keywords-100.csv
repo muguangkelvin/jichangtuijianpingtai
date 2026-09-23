@@ -1,0 +1,101 @@
+id,keyword,questionTitle,cluster,searchIntent,slug
+1,新手机场推荐,2026年新手怎么选择适合自己的魔法机场？,推荐选择,新手入门选型,how-to-choose-airport-for-beginners
+2,便宜稳定机场,价格便宜且稳定不卡顿的机场怎么挑？,推荐选择,高性价比选型,how-to-find-cheap-and-stable-airport
+3,按月付费机场,按月付费的机场有什么优势？适合谁？,推荐选择,月付套餐选型,monthly-paid-airport-benefits
+4,备用机场推荐,为什么建议准备一个备用机场节点？,推荐选择,备用线路选型,why-need-backup-airport
+5,远程办公梯子,远程办公跨境协作适合选择什么机场？,推荐选择,办公场景选型,best-airport-for-remote-work
+6,4K流媒体机场,解锁4K Netflix/Disney+适合什么节点？,推荐选择,影音场景选型,best-proxy-for-4k-streaming
+7,ChatGPT专用梯子,使用ChatGPT和Claude如何避免节点风控？,推荐选择,AI场景选型,best-proxy-for-chatgpt-claude
+8,原生IP机场,什么是原生IP？为什么AI与影音需要原生IP？,推荐选择,IP质量选型,what-is-native-ip-proxy
+9,IEPL专线机场,IEPL专线机场比普通公网中转好在哪里？,推荐选择,线路类型选型,iepl-vs-transit-airports
+10,小白避坑指南,新手购买魔法机场有哪些常见陷阱与误区？,推荐选择,避坑提醒,beginner-airport-buying-traps
+11,小流量年付机场,小流量年付套餐适合哪些使用人群？,推荐选择,轻量年付选型,small-traffic-yearly-airport
+12,大流量机场推荐,经常下载大文件适合选择什么大流量套餐？,推荐选择,大流量选型,high-traffic-airport-recommendation
+13,高性价比梯子,百元以内预算如何挑选高性价比梯子？,推荐选择,预算选型,high-value-ladder-selection
+14,游戏低延迟专线,外服游戏加速选什么低延迟节点？,推荐选择,游戏场景选型,low-latency-proxy-for-gaming
+15,全平台兼容机场,Windows/Mac/iOS/Android全端兼容机场推荐,推荐选择,跨平台选型,cross-platform-airport-recommendation
+16,老牌稳定机场,运营时间长的老牌机场稳定性如何？,推荐选择,运营年限评估,long-running-stable-airport
+17,独享IP节点,独享IP与共享节点有什么区别？,推荐选择,独享IP评估,dedicated-ip-vs-shared-node
+18,机场试用风险,免费试用机场有哪些潜在风险？,推荐选择,试用风险评估,free-trial-airport-risks
+19,Clash Verge教程,Clash Verge Rev 客户端如何快速导入订阅？,Clash客户端,配置教程,clash-verge-rev-subscription-guide
+20,Clash订阅失败,Clash 提示 Invalid Config 报错怎么解决？,Clash客户端,订阅报错排查,clash-invalid-config-fix
+21,Clash TUN模式,Clash 的 TUN 模式有什么用？如何开启？,Clash客户端,高级功能配置,how-to-enable-clash-tun-mode
+22,Clash规则分流,Clash 的 Direct、Global 与 Rule 分流区别？,Clash客户端,分流模式原理,clash-rule-direct-global-difference
+23,Clash延迟测速,Clash 节点延迟测速 999ms 或 Timeout 怎么排查？,Clash客户端,节点测速排查,clash-node-timeout-999ms-fix
+24,Clash自启动,如何设置 Clash 开机自启动与后台静默运行？,Clash客户端,日常使用技巧,clash-auto-start-on-boot
+25,Clash汉化设置,Clash Verge 如何切换为中文界面？,Clash客户端,界面语言设置,clash-verge-chinese-language-setup
+26,Clash节点切换,Clash 如何设置自动选择延迟最低的节点？,Clash客户端,自动选节点,clash-auto-select-fastest-node
+27,Clash备份导出,如何备份与迁移 Clash 的配置文件与订阅？,Clash客户端,配置迁移,clash-export-backup-config
+28,Clash内存占用,Clash 占用内存过高怎么优化设置？,Clash客户端,性能优化,clash-high-memory-usage-fix
+29,Clash与VPN冲突,Clash 能否与本地其他 VPN 同时运行？,Clash客户端,软件兼容排查,clash-conflict-with-other-vpn
+30,Clash更新订阅,Clash 如何设置定时自动更新订阅节点？,Clash客户端,自动更新设置,clash-auto-update-subscription
+31,Clash防泄漏,如何通过 Clash 防止 DNS 泄漏与 IP 暴露？,Clash客户端,隐私安全设置,prevent-dns-leak-with-clash
+32,Clash移动端导入,Android/iOS 端 Clash 怎么导入订阅链接？,Clash客户端,移动端配置,clash-mobile-subscription-import
+33,SS协议原理,Shadowsocks (SS) 协议的基本工作原理是什么？,SS协议,协议原理,how-shadowsocks-protocol-works
+34,SS与VPN区别,Shadowsocks 与传统 VPN 有什么区别？,SS协议,概念对比,shadowsocks-vs-traditional-vpn
+35,SS节点导入,Shadowrocket 怎么通过二维码添加 SS 节点？,SS协议,客户端导入,shadowrocket-ss-qr-code-import
+36,SS混淆插件,Shadowsocks 的 obfs 混淆插件有什么作用？,SS协议,混淆配置,shadowsocks-obfs-plugin-explained
+37,SS端口设置,SS 节点的端口与加密方式怎么选择？,SS协议,参数设置,ss-encryption-and-port-setup
+38,SS加密算法,AES-256-GCM 与 ChaCha20 加密有什么区别？,SS协议,加密对比,aes-256-gcm-vs-chacha20
+39,SS订阅转换,如何将 SS 节点链接转换为 Clash 订阅？,SS协议,订阅转换,ss-link-to-clash-subscription
+40,SS节点超时,SS 节点连接超时可能是什么原因？,SS协议,故障排查,ss-node-connection-timeout-fix
+41,SS多设备连接,一个 SS 订阅支持多少台设备同时在线？,SS协议,设备限制,ss-subscription-device-limit
+42,SS流量消耗,使用 SS 协议会额外消耗手机套内流量吗？,SS协议,流量计算,does-ss-consume-cellular-data
+43,Trojan协议原理,Trojan 代理协议有什么特点与优势？,Trojan协议,协议原理,what-is-trojan-proxy-protocol
+44,Trojan与SS对比,Trojan 协议与 Shadowsocks 相比哪个更稳定？,Trojan协议,协议对比,trojan-vs-shadowsocks-stability
+45,Trojan伪装域名,Trojan 协议为什么需要 TLS 伪装域名？,Trojan协议,伪装机制,why-trojan-needs-tls-domain
+46,Trojan导入Clash,Trojan 节点能否导入 Clash Verge 使用？,Trojan协议,客户端兼容,import-trojan-node-to-clash
+47,Trojan连接报错,Trojan 提示 Certificate Validation Error 怎么解决？,Trojan协议,证书报错排查,trojan-certificate-error-fix
+48,Trojan端口443,为什么 Trojan 节点通常使用 443 端口？,Trojan协议,端口原理,why-trojan-uses-port-443
+49,Trojan单端配置,如何在 Sing-box 中配置 Trojan 节点？,Trojan协议,Singbox配置,configure-trojan-in-singbox
+50,Trojan速度测试,Trojan 协议晚高峰跑分与延迟表现如何？,Trojan协议,性能测试,trojan-speed-and-latency-test
+51,Trojan多节点分流,Trojan 节点如何配合规则实现自动分流？,Trojan协议,规则分流,trojan-auto-traffic-routing
+52,Trojan防被封,Trojan 协议在防封锁方面表现如何？,Trojan协议,防封能力,trojan-anti-blocking-capability
+53,魔法梯子选型,新手挑选魔法上网梯子最看重哪些指标？,梯子口语,概念选型,how-to-choose-magic-ladder
+54,梯子节点延迟,梯子节点的 Ping 延迟与实际下载速度有什么关系？,梯子口语,延迟概念,ladder-ping-latency-vs-speed
+55,梯子被封解决,梯子 IP 被封无法连接怎么快速更换节点？,梯子口语,应急排查,what-to-do-when-ladder-ip-blocked
+56,梯子防失联,如何保存机场官网备用域名防止失联？,梯子口语,防失联指南,airport-anti-loss-backup-domain
+57,免费梯子危害,使用免费梯子有哪些隐私与安全隐患？,梯子口语,安全警示,dangers-of-using-free-ladders
+58,梯子共享设备,手机开了梯子如何共享给同局域网电脑？,梯子口语,局域网共享,share-ladder-connection-in-lan
+59,梯子路由器部署,如何在路由器上配置梯子实现全屋设备翻墙？,梯子口语,路由器配置,setup-ladder-on-home-router
+60,梯子多入口,什么是多入口 BGP 中转梯子？,梯子口语,线路架构,what-is-multi-entry-bgp-ladder
+61,香港节点优势,香港节点为什么是国内用户的首选？,节点地区,地区分析,hong-kong-node-advantages
+62,日本节点特点,日本 IP 节点适合哪些网站与服务？,节点地区,地区分析,japan-node-use-cases
+63,新加坡节点流媒体,新加坡节点解锁流媒体表现如何？,节点地区,地区分析,singapore-node-for-streaming
+64,美国节点AI工具,为什么访问 ChatGPT 优先推荐美国原生节点？,节点地区,地区分析,us-node-for-chatgpt-ai
+65,台湾节点优势,台湾节点在解锁巴哈姆特等台区影视的优势？,节点地区,地区分析,taiwan-node-advantages
+66,节点倍率含义,机场节点的 0.5x、1x、5x 倍率是什么意思？,节点地区,倍率规则,what-does-node-multiplier-mean
+67,高倍率节点消耗,误选 10x 高倍率节点流量扣除太快怎么办？,节点地区,流量陷阱,node-multiplier-traffic-deduction
+68,直连节点与中转,直连节点与 BGP 中转节点有什么区别？,节点地区,线路对比,direct-node-vs-bgp-transit
+69,晚高峰节点拥堵,为什么晚高峰时期节点延迟会变高？,节点地区,晚高峰拥堵,why-nodes-slow-down-at-peak-hours
+70,节点落地IP,什么是入口 IP 与落地 IP？怎么查看？,节点地区,IP架构,entry-ip-vs-landing-ip
+71,冷门节点用途,英国、德国等冷门地区节点有什么用途？,节点地区,特殊节点,rare-country-node-uses
+72,节点自动切换,节点断连时客户端如何实现秒级自动切换？,节点地区,故障切换,auto-node-failover-setup
+73,节点心跳检测,客户端多久对机场节点进行一次心跳检测？,节点地区,测速机制,client-node-heartbeat-check
+74,节点流媒体检测,如何检测当前节点是否成功解锁 Netflix？,节点地区,解锁检测,how-to-check-node-streaming-unlock
+75,机场套餐选择,机场套餐的包月、季付与年付怎么选更划算？,套餐价格,套餐选型,monthly-vs-yearly-airport-plans
+76,流量重置时间,机场套餐的流量是按自然月还是按购买日重置？,套餐价格,流量重置,when-does-airport-traffic-reset
+77,不限时流量包,不限时间的流量包机场适合哪些用户？,套餐价格,流量包选型,no-time-limit-traffic-package
+78,优惠码使用方法,机场结账时优惠码如何正确输入与兑换？,套餐价格,优惠码使用,how-to-use-airport-coupon-code
+79,续费优惠折扣,机场老用户续费套餐是否有优惠折扣？,套餐价格,续费规则,airport-renewal-discount-rules
+80,套餐超出限速,流量用尽后机场是直接断网还是降速？,套餐价格,限速规则,what-happens-when-traffic-used-up
+81,退款政策须知,购买机场套餐后支持无理由退款吗？,套餐价格,退款规则,airport-refund-policy-guide
+82,支付方式安全,机场付款支持微信、支付宝还是加密货币？,套餐价格,支付安全,airport-payment-methods-safety
+83,升级套餐补差价,中途升级高级套餐如何计算差价？,套餐价格,升级规则,upgrade-airport-plan-price-diff
+84,多用户共享套餐,一套机场套餐可以和朋友共享使用吗？,套餐价格,共享规则,share-airport-account-with-friends
+85,Windows客户端导入,Windows 系统推荐使用哪款客户端导入订阅？,多设备配置,Win配置,best-windows-proxy-client-guide
+86,macOS客户端选择,Mac 电脑用 Clash Verge 还是 Sing-box？,多设备配置,Mac配置,mac-proxy-client-recommendation
+87,iPhone免AppStore,iPhone 不换美区 AppStore 怎么安装 Shadowrocket？,多设备配置,iOS配置,install-shadowrocket-without-us-appleid
+88,Android客户端配置,安卓手机推荐使用什么客户端导入机场订阅？,多设备配置,Android配置,best-android-proxy-client
+89,Sing-box导入教程,Sing-box 新手如何导入通用订阅链接？,多设备配置,Singbox教程,singbox-beginner-import-tutorial
+90,Shadowrocket扫码,小火箭 Shadowrocket 扫码导入节点的具体步骤？,多设备配置,iOS小火箭,shadowrocket-scan-qr-import
+91,iPad与iPhone同步,iPhone 上的机场订阅如何同步给 iPad？,多设备配置,iOS同步,sync-proxy-subscription-iphone-ipad
+92,多设备同时在线,超过设备在线数量限制会发生什么？,多设备配置,设备限制,what-if-exceed-device-limit
+93,订阅更新失败排查,机场订阅更新失败 504/404 怎么办？,故障排查,订阅更新故障,airport-subscription-update-failed-fix
+94,TUN模式无法联网,开启 TUN 模式后电脑无法打开网页怎么排查？,故障排查,TUN模式故障,tun-mode-no-internet-fix
+95,DNS污染排查,如何判断网页打不开是因为 DNS 污染？,故障排查,DNS污染排查,how-to-detect-dns-poisoning
+96,浏览器插件冲突,SwitchyOmega 插件设置错误导致无法联网解决,故障排查,浏览器插件,switchyomega-conflict-resolution
+97,系统代理没关,关掉魔法工具后电脑无法正常上网怎么修复？,故障排查,系统代理修复,fix-no-internet-after-closing-proxy
+98,防失联邮箱备份,如何绑定机场电报 Telegram 机器人防止失联？,故障排查,防失联设置,bind-telegram-bot-prevent-loss
+99,机场节点全红报错,所有节点全部显示 Timeout 红色报错排查步骤,故障排查,全红排查,all-nodes-timeout-red-fix
+100,网络隐私防护,使用机场服务如何保护自己的隐私与个人信息安全？,故障排查,隐私保护,protect-privacy-when-using-airport

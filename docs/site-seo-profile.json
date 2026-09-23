@@ -1,0 +1,123 @@
+{
+  "profileVersion": "1.0.0",
+  "domain": "jichangtuijianpingtai.xyz",
+  "siteTopic": "机场推荐与魔法上网客户端配置平台",
+  "siteTitle": "机场推荐平台 - 节点评测与客户端配置指南",
+  "siteDescription": "机场推荐平台专注为新手提供梯子推荐、魔法上网测速对比及 Clash、Sing-box、Shadowrocket 客户端配置全流程教程。",
+  "primaryKeywords": [
+    "机场推荐",
+    "梯子推荐",
+    "魔法上网",
+    "魔法机场",
+    "Clash教程",
+    "Shadowrocket配置",
+    "稳定翻墙"
+  ],
+  "secondaryKeywords": [
+    "性价比机场",
+    "便宜机场",
+    "稳定机场",
+    "机场测评",
+    "节点推荐",
+    "专线机场",
+    "4K流媒体解锁节点",
+    "ChatGPT专用梯子",
+    "Claude专线机场"
+  ],
+  "longTailKeywords": [
+    "2026便宜稳定机场",
+    "魔法上网新手入门",
+    "梯子推荐小白避坑",
+    "Clash Verge 配置教程",
+    "Sing-box 新手导入订阅",
+    "Shadowrocket 节点添加",
+    "Windows翻墙教程",
+    "Mac翻墙教程",
+    "订阅更新失败怎么办",
+    "节点超时排查",
+    "TUN 模式无法联网",
+    "魔法机场防失联指南"
+  ],
+  "heroKeywords": [
+    "机场推荐",
+    "梯子推荐",
+    "魔法上网",
+    "魔法机场",
+    "Clash教程",
+    "Shadowrocket配置",
+    "稳定翻墙",
+    "性价比机场"
+  ],
+  "footerKeywords": [
+    "机场推荐",
+    "性价比机场推荐",
+    "Clash机场测评",
+    "机场节点推荐",
+    "便宜机场",
+    "稳定机场",
+    "AI机场推荐",
+    "机场优惠码"
+  ],
+  "navigationItems": [
+    {
+      "label": "推荐指南",
+      "url": "/posts/recommendation/",
+      "type": "category",
+      "isContentSection": true,
+      "isCommercial": true,
+      "primaryKeyword": "机场推荐",
+      "supportingKeywords": ["性价比机场", "稳定机场", "便宜机场"],
+      "articleCount": 5
+    },
+    {
+      "label": "客户端教程",
+      "url": "/posts/tutorials/",
+      "type": "category",
+      "isContentSection": true,
+      "isCommercial": false,
+      "primaryKeyword": "Clash教程",
+      "supportingKeywords": ["Shadowrocket配置", "Sing-box订阅", "Windows教程"],
+      "articleCount": 5
+    },
+    {
+      "label": "常见排错",
+      "url": "/posts/faq/",
+      "type": "category",
+      "isContentSection": true,
+      "isCommercial": false,
+      "primaryKeyword": "节点超时排查",
+      "supportingKeywords": ["订阅更新失败", "TUN模式无法联网", "防失联指南"],
+      "articleCount": 5
+    },
+    {
+      "label": "自营服务",
+      "url": "/service/",
+      "type": "commercial",
+      "isContentSection": true,
+      "isCommercial": true,
+      "primaryKeyword": "自营高速线路",
+      "supportingKeywords": ["灵动云专线", "免运维节点", "独享IP"],
+      "articleCount": 1
+    }
+  ],
+  "faqKeywordCount": 100,
+  "titlePatterns": {
+    "home": "机场推荐平台 - 节点评测与客户端配置指南",
+    "post": "{title} - 机场推荐平台",
+    "provider": "{name}机场测评：价格、节点与客户端配置指南 - 机场推荐平台",
+    "faq": "{question} - 常见排错 - 机场推荐平台"
+  },
+  "descriptionPatterns": {
+    "home": "机场推荐平台专注为新手提供梯子推荐、魔法上网测速对比及 Clash、Sing-box、Shadowrocket 客户端配置全流程教程。",
+    "post": "{summary}",
+    "provider": "查看{name}机场最新测评、价格套餐、节点地区、优惠码及客户端订阅导入教程。"
+  },
+  "protectedBrandTerms": [
+    "灵动云",
+    "暮光网络",
+    "飞猫云",
+    "微风网络"
+  ],
+  "inactiveKeywords": [],
+  "sourceUpdatedAt": "2026-09-23"
+}

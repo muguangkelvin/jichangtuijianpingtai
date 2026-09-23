@@ -1,0 +1,195 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .Summary }}{{ .Summary | plainify | htmlUnescape | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+<!-- Robots -->
+<meta name="robots" content="{{ if .Params.noindex }}noindex, nofollow{{ else }}index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1{{ end }}">
+
+<!-- RSS -->
+{{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<!-- Inline Minimal CSS for XMin Theme -->
+<style>
+  :root {
+    --bg-color: #fcfcfc;
+    --text-color: #222;
+    --link-color: #0056b3;
+    --accent-color: #d9534f;
+    --border-color: #e5e5e5;
+    --card-bg: #ffffff;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0 20px;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    border-bottom: 2px solid var(--border-color);
+    padding: 18px 0;
+    margin-bottom: 20px;
+  }
+  .header-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  .header-slogan {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 4px;
+  }
+  nav {
+    margin-top: 12px;
+  }
+  nav a {
+    margin-right: 20px;
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  nav a:hover, nav a[aria-current="page"] {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .hero-box {
+    background: #f0f4f8;
+    border-left: 5px solid var(--link-color);
+    padding: 20px;
+    margin: 15px 0 25px 0;
+    border-radius: 6px;
+  }
+  .hero-box h1 {
+    margin: 0 0 12px 0;
+    font-size: 1.65rem;
+  }
+  .hero-keywords-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.65;
+  }
+  .provider-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  @media (min-width: 768px) {
+    .provider-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .provider-card {
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+  }
+  .provider-card.top-rank {
+    border: 2px solid var(--link-color);
+    background: #fafcfe;
+  }
+  .provider-title {
+    font-size: 1.25rem;
+    margin: 0 0 8px 0;
+  }
+  .badge {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    background: #e2e8f0;
+    color: #334155;
+  }
+  .badge-top {
+    background: #dbeafe;
+    color: #1e40af;
+    font-weight: bold;
+  }
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--link-color);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .btn-secondary {
+    background: #6c757d;
+  }
+  .btn-coupon {
+    background: #28a745;
+  }
+  .table-responsive {
+    overflow-x: auto;
+    margin: 20px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  th, td {
+    border: 1px solid var(--border-color);
+    padding: 10px 14px;
+    text-align: left;
+  }
+  th {
+    background: #f1f5f9;
+  }
+  footer {
+    border-top: 2px solid var(--border-color);
+    padding: 25px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .footer-keywords-text {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  .breadcrumbs {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  .breadcrumbs a { color: var(--link-color); text-decoration: none; }
+  .article-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .toc-box {
+    background: #f8fafc;
+    border: 1px dashed var(--border-color);
+    padding: 12px 18px;
+    margin: 15px 0;
+    font-size: 0.95rem;
+  }
+</style>

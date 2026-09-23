@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section>
+  <div class="breadcrumbs">
+    <a href="/">首页</a> &gt; <span>{{ .Title }}</span>
+  </div>
+
+  <h1>{{ .Title }}</h1>
+  <div style="color:#555; margin-bottom:20px;">
+    {{ if .Description }}{{ .Description }}{{ else }}提供最专业的机场选型、客户端配置教程与常见排错指南。{{ end }}
+  </div>
+
+  <div class="post-list">
+    {{ range .Pages }}
+    <div style="border-bottom:1px solid #eee; padding:15px 0;">
+      <h2 style="font-size:1.2rem; margin:0 0 5px 0;">
+        <a href="{{ .RelPermalink }}" style="color:#0056b3; text-decoration:none;">{{ .Title }}</a>
+      </h2>
+      <div style="font-size:0.85rem; color:#666; margin-bottom:8px;">
+        {{ .Date.Format "2006-01-02" }} | {{ .Summary | plainify | htmlUnescape | truncate 100 }}
+      </div>
+      <a href="{{ .RelPermalink }}" style="font-size:0.85rem; color:#0056b3;">阅读全文 &rarr;</a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

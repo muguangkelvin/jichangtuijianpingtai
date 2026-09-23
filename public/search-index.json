@@ -1,0 +1,732 @@
+[
+  {
+    "title": "关于我们 - 机场推荐平台编辑说明",
+    "url": "/about/",
+    "summary": "介绍机场推荐平台的建站初衷、编辑团队独立客观评测原则及站点定位。"
+  },
+  {
+    "title": "联盟披露 - 邀请链接与商业透明度说明",
+    "url": "/affiliate-disclosure/",
+    "summary": "公开说明本站页面包含的邀请链接（Affiliate Links）与推广收益机制。"
+  },
+  {
+    "title": "联系我们 - 机场资料纠错与合作",
+    "url": "/contact/",
+    "summary": "提供机场推荐平台联系邮箱、资料纠错与商务合作联系方式。"
+  },
+  {
+    "title": "纠错与更新政策 - 机场推荐平台",
+    "url": "/corrections/",
+    "summary": "说明机场推荐平台对数据更正、价格变动及读者反馈的纠错更新流程。"
+  },
+  {
+    "title": "免责声明 - 机场推荐平台",
+    "url": "/disclaimer/",
+    "summary": "本站内容仅作网络隐私防护、远程办公与网络技术交流之用途。"
+  },
+  {
+    "title": "编辑原则 - 机场推荐与测评质量指南",
+    "url": "/editorial-policy/",
+    "summary": "说明机场推荐平台的选题、客观性、审核流程与独立性保证。"
+  },
+  {
+    "title": "评测方法 - 机场推荐平台测试标准",
+    "url": "/methodology/",
+    "summary": "详细说明机场推荐平台对机场节点、晚高峰带宽、IP 纯净度及连通率的评测方法与评估标准。"
+  },
+  {
+    "title": "隐私政策 - 机场推荐平台",
+    "url": "/privacy/",
+    "summary": "说明机场推荐平台对访问者隐私的保护承诺与数据使用规范。"
+  },
+  {
+    "title": "自营服务 - 机场推荐平台官方高可用线路",
+    "url": "/service/",
+    "summary": "机场推荐平台官方自营高速专线服务，免去复杂的客户端规则配置，提供全节点原生 IP 与 24 小时技术保障。"
+  },
+  {
+    "title": "服务条款 - 机场推荐平台",
+    "url": "/terms/",
+    "summary": "机场推荐平台的使用条款、知识产权及合规声明。"
+  },
+  {
+    "title": "机场推荐平台 - 节点评测与客户端配置指南",
+    "url": "/terms/",
+    "summary": "机场推荐平台专注为新手提供梯子推荐、魔法上网测速对比及 Clash、Sing-box、Shadowrocket 客户端配置全流程教程。"
+  },
+  {
+    "title": "AES-256-GCM 与 ChaCha20 加密有什么区别？",
+    "url": "/faq/aes-256-gcm-vs-chacha20/",
+    "summary": "关于SS加密算法的详细解答：解析加密对比与常见操作配置误区。"
+  },
+  {
+    "title": "如何保存机场官网备用域名防止失联？",
+    "url": "/faq/airport-anti-loss-backup-domain/",
+    "summary": "关于梯子防失联的详细解答：解析防失联指南与常见操作配置误区。"
+  },
+  {
+    "title": "机场付款支持微信、支付宝还是加密货币？",
+    "url": "/faq/airport-payment-methods-safety/",
+    "summary": "关于支付方式安全的详细解答：解析支付安全与常见操作配置误区。"
+  },
+  {
+    "title": "购买机场套餐后支持无理由退款吗？",
+    "url": "/faq/airport-refund-policy-guide/",
+    "summary": "关于退款政策须知的详细解答：解析退款规则与常见操作配置误区。"
+  },
+  {
+    "title": "机场老用户续费套餐是否有优惠折扣？",
+    "url": "/faq/airport-renewal-discount-rules/",
+    "summary": "关于续费优惠折扣的详细解答：解析续费规则与常见操作配置误区。"
+  },
+  {
+    "title": "机场订阅更新失败 504/404 怎么办？",
+    "url": "/faq/airport-subscription-update-failed-fix/",
+    "summary": "关于订阅更新失败排查的详细解答：解析订阅更新故障与常见操作配置误区。"
+  },
+  {
+    "title": "所有节点全部显示 Timeout 红色报错排查步骤",
+    "url": "/faq/all-nodes-timeout-red-fix/",
+    "summary": "关于机场节点全红报错的详细解答：解析全红排查与常见操作配置误区。"
+  },
+  {
+    "title": "节点断连时客户端如何实现秒级自动切换？",
+    "url": "/faq/auto-node-failover-setup/",
+    "summary": "关于节点自动切换的详细解答：解析故障切换与常见操作配置误区。"
+  },
+  {
+    "title": "新手购买魔法机场有哪些常见陷阱与误区？",
+    "url": "/faq/beginner-airport-buying-traps/",
+    "summary": "关于小白避坑指南的详细解答：解析避坑提醒与常见操作配置误区。"
+  },
+  {
+    "title": "远程办公跨境协作适合选择什么机场？",
+    "url": "/faq/best-airport-for-remote-work/",
+    "summary": "关于远程办公梯子的详细解答：解析办公场景选型与常见操作配置误区。"
+  },
+  {
+    "title": "安卓手机推荐使用什么客户端导入机场订阅？",
+    "url": "/faq/best-android-proxy-client/",
+    "summary": "关于Android客户端配置的详细解答：解析Android配置与常见操作配置误区。"
+  },
+  {
+    "title": "解锁4K Netflix/Disney+适合什么节点？",
+    "url": "/faq/best-proxy-for-4k-streaming/",
+    "summary": "关于4K流媒体机场的详细解答：解析影音场景选型与常见操作配置误区。"
+  },
+  {
+    "title": "使用ChatGPT和Claude如何避免节点风控？",
+    "url": "/faq/best-proxy-for-chatgpt-claude/",
+    "summary": "关于ChatGPT专用梯子的详细解答：解析AI场景选型与常见操作配置误区。"
+  },
+  {
+    "title": "Windows 系统推荐使用哪款客户端导入订阅？",
+    "url": "/faq/best-windows-proxy-client-guide/",
+    "summary": "关于Windows客户端导入的详细解答：解析Win配置与常见操作配置误区。"
+  },
+  {
+    "title": "如何绑定机场电报 Telegram 机器人防止失联？",
+    "url": "/faq/bind-telegram-bot-prevent-loss/",
+    "summary": "关于防失联邮箱备份的详细解答：解析防失联设置与常见操作配置误区。"
+  },
+  {
+    "title": "Clash 如何设置自动选择延迟最低的节点？",
+    "url": "/faq/clash-auto-select-fastest-node/",
+    "summary": "关于Clash节点切换的详细解答：解析自动选节点与常见操作配置误区。"
+  },
+  {
+    "title": "如何设置 Clash 开机自启动与后台静默运行？",
+    "url": "/faq/clash-auto-start-on-boot/",
+    "summary": "关于Clash自启动的详细解答：解析日常使用技巧与常见操作配置误区。"
+  },
+  {
+    "title": "Clash 如何设置定时自动更新订阅节点？",
+    "url": "/faq/clash-auto-update-subscription/",
+    "summary": "关于Clash更新订阅的详细解答：解析自动更新设置与常见操作配置误区。"
+  },
+  {
+    "title": "Clash 能否与本地其他 VPN 同时运行？",
+    "url": "/faq/clash-conflict-with-other-vpn/",
+    "summary": "关于Clash与VPN冲突的详细解答：解析软件兼容排查与常见操作配置误区。"
+  },
+  {
+    "title": "如何备份与迁移 Clash 的配置文件与订阅？",
+    "url": "/faq/clash-export-backup-config/",
+    "summary": "关于Clash备份导出的详细解答：解析配置迁移与常见操作配置误区。"
+  },
+  {
+    "title": "Clash 占用内存过高怎么优化设置？",
+    "url": "/faq/clash-high-memory-usage-fix/",
+    "summary": "关于Clash内存占用的详细解答：解析性能优化与常见操作配置误区。"
+  },
+  {
+    "title": "Clash 提示 Invalid Config 报错怎么解决？",
+    "url": "/faq/clash-invalid-config-fix/",
+    "summary": "关于Clash订阅失败的详细解答：解析订阅报错排查与常见操作配置误区。"
+  },
+  {
+    "title": "Android/iOS 端 Clash 怎么导入订阅链接？",
+    "url": "/faq/clash-mobile-subscription-import/",
+    "summary": "关于Clash移动端导入的详细解答：解析移动端配置与常见操作配置误区。"
+  },
+  {
+    "title": "Clash 节点延迟测速 999ms 或 Timeout 怎么排查？",
+    "url": "/faq/clash-node-timeout-999ms-fix/",
+    "summary": "关于Clash延迟测速的详细解答：解析节点测速排查与常见操作配置误区。"
+  },
+  {
+    "title": "Clash 的 Direct、Global 与 Rule 分流区别？",
+    "url": "/faq/clash-rule-direct-global-difference/",
+    "summary": "关于Clash规则分流的详细解答：解析分流模式原理与常见操作配置误区。"
+  },
+  {
+    "title": "Clash Verge 如何切换为中文界面？",
+    "url": "/faq/clash-verge-chinese-language-setup/",
+    "summary": "关于Clash汉化设置的详细解答：解析界面语言设置与常见操作配置误区。"
+  },
+  {
+    "title": "Clash Verge Rev 客户端如何快速导入订阅？",
+    "url": "/faq/clash-verge-rev-subscription-guide/",
+    "summary": "关于Clash Verge教程的详细解答：解析配置教程与常见操作配置误区。"
+  },
+  {
+    "title": "客户端多久对机场节点进行一次心跳检测？",
+    "url": "/faq/client-node-heartbeat-check/",
+    "summary": "关于节点心跳检测的详细解答：解析测速机制与常见操作配置误区。"
+  },
+  {
+    "title": "如何在 Sing-box 中配置 Trojan 节点？",
+    "url": "/faq/configure-trojan-in-singbox/",
+    "summary": "关于Trojan单端配置的详细解答：解析Singbox配置与常见操作配置误区。"
+  },
+  {
+    "title": "Windows/Mac/iOS/Android全端兼容机场推荐",
+    "url": "/faq/cross-platform-airport-recommendation/",
+    "summary": "关于全平台兼容机场的详细解答：解析跨平台选型与常见操作配置误区。"
+  },
+  {
+    "title": "使用免费梯子有哪些隐私与安全隐患？",
+    "url": "/faq/dangers-of-using-free-ladders/",
+    "summary": "关于免费梯子危害的详细解答：解析安全警示与常见操作配置误区。"
+  },
+  {
+    "title": "独享IP与共享节点有什么区别？",
+    "url": "/faq/dedicated-ip-vs-shared-node/",
+    "summary": "关于独享IP节点的详细解答：解析独享IP评估与常见操作配置误区。"
+  },
+  {
+    "title": "直连节点与 BGP 中转节点有什么区别？",
+    "url": "/faq/direct-node-vs-bgp-transit/",
+    "summary": "关于直连节点与中转的详细解答：解析线路对比与常见操作配置误区。"
+  },
+  {
+    "title": "使用 SS 协议会额外消耗手机套内流量吗？",
+    "url": "/faq/does-ss-consume-cellular-data/",
+    "summary": "关于SS流量消耗的详细解答：解析流量计算与常见操作配置误区。"
+  },
+  {
+    "title": "什么是入口 IP 与落地 IP？怎么查看？",
+    "url": "/faq/entry-ip-vs-landing-ip/",
+    "summary": "关于节点落地IP的详细解答：解析IP架构与常见操作配置误区。"
+  },
+  {
+    "title": "关掉魔法工具后电脑无法正常上网怎么修复？",
+    "url": "/faq/fix-no-internet-after-closing-proxy/",
+    "summary": "关于系统代理没关的详细解答：解析系统代理修复与常见操作配置误区。"
+  },
+  {
+    "title": "免费试用机场有哪些潜在风险？",
+    "url": "/faq/free-trial-airport-risks/",
+    "summary": "关于机场试用风险的详细解答：解析试用风险评估与常见操作配置误区。"
+  },
+  {
+    "title": "经常下载大文件适合选择什么大流量套餐？",
+    "url": "/faq/high-traffic-airport-recommendation/",
+    "summary": "关于大流量机场推荐的详细解答：解析大流量选型与常见操作配置误区。"
+  },
+  {
+    "title": "百元以内预算如何挑选高性价比梯子？",
+    "url": "/faq/high-value-ladder-selection/",
+    "summary": "关于高性价比梯子的详细解答：解析预算选型与常见操作配置误区。"
+  },
+  {
+    "title": "香港节点为什么是国内用户的首选？",
+    "url": "/faq/hong-kong-node-advantages/",
+    "summary": "关于香港节点优势的详细解答：解析地区分析与常见操作配置误区。"
+  },
+  {
+    "title": "Shadowsocks (SS) 协议的基本工作原理是什么？",
+    "url": "/faq/how-shadowsocks-protocol-works/",
+    "summary": "关于SS协议原理的详细解答：解析协议原理与常见操作配置误区。"
+  },
+  {
+    "title": "如何检测当前节点是否成功解锁 Netflix？",
+    "url": "/faq/how-to-check-node-streaming-unlock/",
+    "summary": "关于节点流媒体检测的详细解答：解析解锁检测与常见操作配置误区。"
+  },
+  {
+    "title": "2026年新手怎么选择适合自己的魔法机场？",
+    "url": "/faq/how-to-choose-airport-for-beginners/",
+    "summary": "关于新手机场推荐的详细解答：解析新手入门选型与常见操作配置误区。"
+  },
+  {
+    "title": "新手挑选魔法上网梯子最看重哪些指标？",
+    "url": "/faq/how-to-choose-magic-ladder/",
+    "summary": "关于魔法梯子选型的详细解答：解析概念选型与常见操作配置误区。"
+  },
+  {
+    "title": "如何判断网页打不开是因为 DNS 污染？",
+    "url": "/faq/how-to-detect-dns-poisoning/",
+    "summary": "关于DNS污染排查的详细解答：解析DNS污染排查与常见操作配置误区。"
+  },
+  {
+    "title": "Clash 的 TUN 模式有什么用？如何开启？",
+    "url": "/faq/how-to-enable-clash-tun-mode/",
+    "summary": "关于Clash TUN模式的详细解答：解析高级功能配置与常见操作配置误区。"
+  },
+  {
+    "title": "价格便宜且稳定不卡顿的机场怎么挑？",
+    "url": "/faq/how-to-find-cheap-and-stable-airport/",
+    "summary": "关于便宜稳定机场的详细解答：解析高性价比选型与常见操作配置误区。"
+  },
+  {
+    "title": "机场结账时优惠码如何正确输入与兑换？",
+    "url": "/faq/how-to-use-airport-coupon-code/",
+    "summary": "关于优惠码使用方法的详细解答：解析优惠码使用与常见操作配置误区。"
+  },
+  {
+    "title": "IEPL专线机场比普通公网中转好在哪里？",
+    "url": "/faq/iepl-vs-transit-airports/",
+    "summary": "关于IEPL专线机场的详细解答：解析线路类型选型与常见操作配置误区。"
+  },
+  {
+    "title": "Trojan 节点能否导入 Clash Verge 使用？",
+    "url": "/faq/import-trojan-node-to-clash/",
+    "summary": "关于Trojan导入Clash的详细解答：解析客户端兼容与常见操作配置误区。"
+  },
+  {
+    "title": "iPhone 不换美区 AppStore 怎么安装 Shadowrocket？",
+    "url": "/faq/install-shadowrocket-without-us-appleid/",
+    "summary": "关于iPhone免AppStore的详细解答：解析iOS配置与常见操作配置误区。"
+  },
+  {
+    "title": "日本 IP 节点适合哪些网站与服务？",
+    "url": "/faq/japan-node-use-cases/",
+    "summary": "关于日本节点特点的详细解答：解析地区分析与常见操作配置误区。"
+  },
+  {
+    "title": "梯子节点的 Ping 延迟与实际下载速度有什么关系？",
+    "url": "/faq/ladder-ping-latency-vs-speed/",
+    "summary": "关于梯子节点延迟的详细解答：解析延迟概念与常见操作配置误区。"
+  },
+  {
+    "title": "运营时间长的老牌机场稳定性如何？",
+    "url": "/faq/long-running-stable-airport/",
+    "summary": "关于老牌稳定机场的详细解答：解析运营年限评估与常见操作配置误区。"
+  },
+  {
+    "title": "外服游戏加速选什么低延迟节点？",
+    "url": "/faq/low-latency-proxy-for-gaming/",
+    "summary": "关于游戏低延迟专线的详细解答：解析游戏场景选型与常见操作配置误区。"
+  },
+  {
+    "title": "Mac 电脑用 Clash Verge 还是 Sing-box？",
+    "url": "/faq/mac-proxy-client-recommendation/",
+    "summary": "关于macOS客户端选择的详细解答：解析Mac配置与常见操作配置误区。"
+  },
+  {
+    "title": "按月付费的机场有什么优势？适合谁？",
+    "url": "/faq/monthly-paid-airport-benefits/",
+    "summary": "关于按月付费机场的详细解答：解析月付套餐选型与常见操作配置误区。"
+  },
+  {
+    "title": "机场套餐的包月、季付与年付怎么选更划算？",
+    "url": "/faq/monthly-vs-yearly-airport-plans/",
+    "summary": "关于机场套餐选择的详细解答：解析套餐选型与常见操作配置误区。"
+  },
+  {
+    "title": "不限时间的流量包机场适合哪些用户？",
+    "url": "/faq/no-time-limit-traffic-package/",
+    "summary": "关于不限时流量包的详细解答：解析流量包选型与常见操作配置误区。"
+  },
+  {
+    "title": "误选 10x 高倍率节点流量扣除太快怎么办？",
+    "url": "/faq/node-multiplier-traffic-deduction/",
+    "summary": "关于高倍率节点消耗的详细解答：解析流量陷阱与常见操作配置误区。"
+  },
+  {
+    "title": "如何通过 Clash 防止 DNS 泄漏与 IP 暴露？",
+    "url": "/faq/prevent-dns-leak-with-clash/",
+    "summary": "关于Clash防泄漏的详细解答：解析隐私安全设置与常见操作配置误区。"
+  },
+  {
+    "title": "使用机场服务如何保护自己的隐私与个人信息安全？",
+    "url": "/faq/protect-privacy-when-using-airport/",
+    "summary": "关于网络隐私防护的详细解答：解析隐私保护与常见操作配置误区。"
+  },
+  {
+    "title": "英国、德国等冷门地区节点有什么用途？",
+    "url": "/faq/rare-country-node-uses/",
+    "summary": "关于冷门节点用途的详细解答：解析特殊节点与常见操作配置误区。"
+  },
+  {
+    "title": "如何在路由器上配置梯子实现全屋设备翻墙？",
+    "url": "/faq/setup-ladder-on-home-router/",
+    "summary": "关于梯子路由器部署的详细解答：解析路由器配置与常见操作配置误区。"
+  },
+  {
+    "title": "小火箭 Shadowrocket 扫码导入节点的具体步骤？",
+    "url": "/faq/shadowrocket-scan-qr-import/",
+    "summary": "关于Shadowrocket扫码的详细解答：解析iOS小火箭与常见操作配置误区。"
+  },
+  {
+    "title": "Shadowrocket 怎么通过二维码添加 SS 节点？",
+    "url": "/faq/shadowrocket-ss-qr-code-import/",
+    "summary": "关于SS节点导入的详细解答：解析客户端导入与常见操作配置误区。"
+  },
+  {
+    "title": "Shadowsocks 的 obfs 混淆插件有什么作用？",
+    "url": "/faq/shadowsocks-obfs-plugin-explained/",
+    "summary": "关于SS混淆插件的详细解答：解析混淆配置与常见操作配置误区。"
+  },
+  {
+    "title": "Shadowsocks 与传统 VPN 有什么区别？",
+    "url": "/faq/shadowsocks-vs-traditional-vpn/",
+    "summary": "关于SS与VPN区别的详细解答：解析概念对比与常见操作配置误区。"
+  },
+  {
+    "title": "一套机场套餐可以和朋友共享使用吗？",
+    "url": "/faq/share-airport-account-with-friends/",
+    "summary": "关于多用户共享套餐的详细解答：解析共享规则与常见操作配置误区。"
+  },
+  {
+    "title": "手机开了梯子如何共享给同局域网电脑？",
+    "url": "/faq/share-ladder-connection-in-lan/",
+    "summary": "关于梯子共享设备的详细解答：解析局域网共享与常见操作配置误区。"
+  },
+  {
+    "title": "新加坡节点解锁流媒体表现如何？",
+    "url": "/faq/singapore-node-for-streaming/",
+    "summary": "关于新加坡节点流媒体的详细解答：解析地区分析与常见操作配置误区。"
+  },
+  {
+    "title": "Sing-box 新手如何导入通用订阅链接？",
+    "url": "/faq/singbox-beginner-import-tutorial/",
+    "summary": "关于Sing-box导入教程的详细解答：解析Singbox教程与常见操作配置误区。"
+  },
+  {
+    "title": "小流量年付套餐适合哪些使用人群？",
+    "url": "/faq/small-traffic-yearly-airport/",
+    "summary": "关于小流量年付机场的详细解答：解析轻量年付选型与常见操作配置误区。"
+  },
+  {
+    "title": "SS 节点的端口与加密方式怎么选择？",
+    "url": "/faq/ss-encryption-and-port-setup/",
+    "summary": "关于SS端口设置的详细解答：解析参数设置与常见操作配置误区。"
+  },
+  {
+    "title": "如何将 SS 节点链接转换为 Clash 订阅？",
+    "url": "/faq/ss-link-to-clash-subscription/",
+    "summary": "关于SS订阅转换的详细解答：解析订阅转换与常见操作配置误区。"
+  },
+  {
+    "title": "SS 节点连接超时可能是什么原因？",
+    "url": "/faq/ss-node-connection-timeout-fix/",
+    "summary": "关于SS节点超时的详细解答：解析故障排查与常见操作配置误区。"
+  },
+  {
+    "title": "一个 SS 订阅支持多少台设备同时在线？",
+    "url": "/faq/ss-subscription-device-limit/",
+    "summary": "关于SS多设备连接的详细解答：解析设备限制与常见操作配置误区。"
+  },
+  {
+    "title": "SwitchyOmega 插件设置错误导致无法联网解决",
+    "url": "/faq/switchyomega-conflict-resolution/",
+    "summary": "关于浏览器插件冲突的详细解答：解析浏览器插件与常见操作配置误区。"
+  },
+  {
+    "title": "iPhone 上的机场订阅如何同步给 iPad？",
+    "url": "/faq/sync-proxy-subscription-iphone-ipad/",
+    "summary": "关于iPad与iPhone同步的详细解答：解析iOS同步与常见操作配置误区。"
+  },
+  {
+    "title": "台湾节点在解锁巴哈姆特等台区影视的优势？",
+    "url": "/faq/taiwan-node-advantages/",
+    "summary": "关于台湾节点优势的详细解答：解析地区分析与常见操作配置误区。"
+  },
+  {
+    "title": "Trojan 协议在防封锁方面表现如何？",
+    "url": "/faq/trojan-anti-blocking-capability/",
+    "summary": "关于Trojan防被封的详细解答：解析防封能力与常见操作配置误区。"
+  },
+  {
+    "title": "Trojan 节点如何配合规则实现自动分流？",
+    "url": "/faq/trojan-auto-traffic-routing/",
+    "summary": "关于Trojan多节点分流的详细解答：解析规则分流与常见操作配置误区。"
+  },
+  {
+    "title": "Trojan 提示 Certificate Validation Error 怎么解决？",
+    "url": "/faq/trojan-certificate-error-fix/",
+    "summary": "关于Trojan连接报错的详细解答：解析证书报错排查与常见操作配置误区。"
+  },
+  {
+    "title": "Trojan 协议晚高峰跑分与延迟表现如何？",
+    "url": "/faq/trojan-speed-and-latency-test/",
+    "summary": "关于Trojan速度测试的详细解答：解析性能测试与常见操作配置误区。"
+  },
+  {
+    "title": "Trojan 协议与 Shadowsocks 相比哪个更稳定？",
+    "url": "/faq/trojan-vs-shadowsocks-stability/",
+    "summary": "关于Trojan与SS对比的详细解答：解析协议对比与常见操作配置误区。"
+  },
+  {
+    "title": "开启 TUN 模式后电脑无法打开网页怎么排查？",
+    "url": "/faq/tun-mode-no-internet-fix/",
+    "summary": "关于TUN模式无法联网的详细解答：解析TUN模式故障与常见操作配置误区。"
+  },
+  {
+    "title": "中途升级高级套餐如何计算差价？",
+    "url": "/faq/upgrade-airport-plan-price-diff/",
+    "summary": "关于升级套餐补差价的详细解答：解析升级规则与常见操作配置误区。"
+  },
+  {
+    "title": "为什么访问 ChatGPT 优先推荐美国原生节点？",
+    "url": "/faq/us-node-for-chatgpt-ai/",
+    "summary": "关于美国节点AI工具的详细解答：解析地区分析与常见操作配置误区。"
+  },
+  {
+    "title": "机场节点的 0.5x、1x、5x 倍率是什么意思？",
+    "url": "/faq/what-does-node-multiplier-mean/",
+    "summary": "关于节点倍率含义的详细解答：解析倍率规则与常见操作配置误区。"
+  },
+  {
+    "title": "流量用尽后机场是直接断网还是降速？",
+    "url": "/faq/what-happens-when-traffic-used-up/",
+    "summary": "关于套餐超出限速的详细解答：解析限速规则与常见操作配置误区。"
+  },
+  {
+    "title": "超过设备在线数量限制会发生什么？",
+    "url": "/faq/what-if-exceed-device-limit/",
+    "summary": "关于多设备同时在线的详细解答：解析设备限制与常见操作配置误区。"
+  },
+  {
+    "title": "什么是多入口 BGP 中转梯子？",
+    "url": "/faq/what-is-multi-entry-bgp-ladder/",
+    "summary": "关于梯子多入口的详细解答：解析线路架构与常见操作配置误区。"
+  },
+  {
+    "title": "什么是原生IP？为什么AI与影音需要原生IP？",
+    "url": "/faq/what-is-native-ip-proxy/",
+    "summary": "关于原生IP机场的详细解答：解析IP质量选型与常见操作配置误区。"
+  },
+  {
+    "title": "Trojan 代理协议有什么特点与优势？",
+    "url": "/faq/what-is-trojan-proxy-protocol/",
+    "summary": "关于Trojan协议原理的详细解答：解析协议原理与常见操作配置误区。"
+  },
+  {
+    "title": "梯子 IP 被封无法连接怎么快速更换节点？",
+    "url": "/faq/what-to-do-when-ladder-ip-blocked/",
+    "summary": "关于梯子被封解决的详细解答：解析应急排查与常见操作配置误区。"
+  },
+  {
+    "title": "机场套餐的流量是按自然月还是按购买日重置？",
+    "url": "/faq/when-does-airport-traffic-reset/",
+    "summary": "关于流量重置时间的详细解答：解析流量重置与常见操作配置误区。"
+  },
+  {
+    "title": "为什么建议准备一个备用机场节点？",
+    "url": "/faq/why-need-backup-airport/",
+    "summary": "关于备用机场推荐的详细解答：解析备用线路选型与常见操作配置误区。"
+  },
+  {
+    "title": "为什么晚高峰时期节点延迟会变高？",
+    "url": "/faq/why-nodes-slow-down-at-peak-hours/",
+    "summary": "关于晚高峰节点拥堵的详细解答：解析晚高峰拥堵与常见操作配置误区。"
+  },
+  {
+    "title": "Trojan 协议为什么需要 TLS 伪装域名？",
+    "url": "/faq/why-trojan-needs-tls-domain/",
+    "summary": "关于Trojan伪装域名的详细解答：解析伪装机制与常见操作配置误区。"
+  },
+  {
+    "title": "为什么 Trojan 节点通常使用 443 端口？",
+    "url": "/faq/why-trojan-uses-port-443/",
+    "summary": "关于Trojan端口443的详细解答：解析端口原理与常见操作配置误区。"
+  },
+  {
+    "title": "节点超时与订阅无法更新？魔法机场新手常见 5 大故障排查",
+    "url": "/posts/airport-node-timeout-troubleshooting/",
+    "summary": "汇总魔法上网新手常遇到的节点 Timeout、订阅更新失败 504、TUN 模式打不开网页及 DNS 污染故障排查方案。"
+  },
+  {
+    "title": "2026 新手魔法上网入门：梯子与机场如何选择？（附选型清单）",
+    "url": "/posts/beginner-guide-to-cross-firewall/",
+    "summary": "面向魔法上网小白与新手的梯子与机场选型指南，详细解析 BGP 中转、IEPL 专线区别及避坑注意事项。"
+  },
+  {
+    "title": "流畅使用 AI 工具：ChatGPT 与 Claude 专线机场选购要点",
+    "url": "/posts/best-proxy-for-chatgpt-and-claude/",
+    "summary": "解析使用 ChatGPT、Claude 等生成式 AI 工具对节点 IP 质量、原生 IP 及风控防封的要求，并提供机场选购指南。"
+  },
+  {
+    "title": "Clash Verge Rev 零基础配置教程：从节点导入到规则分流",
+    "url": "/posts/clash-verge-rev-beginner-tutorial/",
+    "summary": "手把手教你如何安装与配置 Clash Verge Rev 客户端，完成机场订阅导入、TUN 模式开启与规则分流设置。"
+  },
+  {
+    "title": "常见排错 - 节点超时、TUN模式与防失联指南",
+    "url": "/posts/faq/",
+    "summary": "解决节点 Timeout 报错、订阅更新 504 失败、DNS 污染及 TUN 模式打不开网页问题。"
+  },
+  {
+    "title": "推荐指南 - 2026 稳定机场推荐榜与 28 家服务商全量对比",
+    "url": "/posts/recommendation/",
+    "summary": "汇总 2026 年最新 28 家稳定机场推荐、性价比套餐对比及全量服务商评测索引。"
+  },
+  {
+    "title": "客户端教程 - Clash、Sing-box、Shadowrocket 全平台指南",
+    "url": "/posts/tutorials/",
+    "summary": "提供 Windows、macOS、iOS 及 Android 平台最全代理客户端安装与订阅导入教程。"
+  },
+  {
+    "title": "一翻云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/1fly-cloud/",
+    "summary": "节点连接迅速，规则分流完善，支持自动选择最快节点。"
+  },
+  {
+    "title": "二猫云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/2mao-cloud/",
+    "summary": "门槛低、价格实惠，适合偶尔连接查资料与社交的用户。"
+  },
+  {
+    "title": "微风网络机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/breezenet/",
+    "summary": "TOP 4 推荐，稳定轻量级服务商，支持常规协议导入，套餐灵活适合日常备用。"
+  },
+  {
+    "title": "灵猫机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/civet/",
+    "summary": "优化 Netflix、Disney+ 等海外主流音视频流媒体解锁。"
+  },
+  {
+    "title": "边缘节点机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/edgenova/",
+    "summary": "拥有节点分布极广的边缘网络，满足特定地区IP访问需求。"
+  },
+  {
+    "title": "飞为机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/firefly/",
+    "summary": "轻便快捷，提供多种协议节点，接入灵活稳定。"
+  },
+  {
+    "title": "闪跃机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/flashleap/",
+    "summary": "闪电般连通速度，适合游戏辅助加速与低延迟交互。"
+  },
+  {
+    "title": "飞猫云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/flycat-cloud/",
+    "summary": "TOP 3 推荐，高性价比轻量方案，提供自研一键客户端与标准 Clash 订阅，晚高峰表现出色。"
+  },
+  {
+    "title": "飞V机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/flyv/",
+    "summary": "具有丰富的多国家节点轮换，适合建立高可用备用方案。"
+  },
+  {
+    "title": "光年梯机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/guangnian-ti/",
+    "summary": "老牌线路服务，连通率较高，提供故障快速响应排错。"
+  },
+  {
+    "title": "光速云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/guangsu-cloud/",
+    "summary": "主打高速节点连接，优化主流游戏与下载节点。"
+  },
+  {
+    "title": "隐形人机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/invisible/",
+    "summary": "侧重匿名性与防追踪防护，节点经过特别混淆处理。"
+  },
+  {
+    "title": "极连云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/jilian-cloud/",
+    "summary": "节点覆盖丰富，涵盖美、日、港、韩、新加坡等多国原生IP。"
+  },
+  {
+    "title": "可信云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/kosing-cloud/",
+    "summary": "注重传输数据加密与隐私防护，线路节点稳定性极高。"
+  },
+  {
+    "title": "快狸机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/kuaili/",
+    "summary": "客户端兼容性佳，在 iOS 与 Android 上表现稳定流畅。"
+  },
+  {
+    "title": "跨界机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/kuajie/",
+    "summary": "提供纯净商用 IP 节点，助推跨境商务与海外运营。"
+  },
+  {
+    "title": "梯子云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/laddercloud/",
+    "summary": "简单直观的面板界面，上手门槛低，上手即用。"
+  },
+  {
+    "title": "灵动云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/lingdong-cloud/",
+    "summary": "全站第一推荐，提供高速专线与 BGP 中转节点，支持按量与包月切换，原生 IP 解锁，稳定低延迟。"
+  },
+  {
+    "title": "全球云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/quanqiu-cloud/",
+    "summary": "全BGP中转/IEPL专线节点，原生IP解锁，高稳定低延迟。"
+  },
+  {
+    "title": "Sogo云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/sogo-cloud/",
+    "summary": "轻巧快捷的节点服务，支持多系统客户端订阅一键同步。"
+  },
+  {
+    "title": "速界机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/sujie/",
+    "summary": "高速节点调配，全天连通率良好，提供优质客服支持。"
+  },
+  {
+    "title": "暮光网络机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/twilight/",
+    "summary": "TOP 2 推荐，专注高吞吐大带宽线路，晚高峰流畅刷视频与大文件传输，解锁主流流媒体。"
+  },
+  {
+    "title": "U1S1机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/u1s1/",
+    "summary": "实实在在的性价比节点服务，无虚浮描述，适合长期日常使用。"
+  },
+  {
+    "title": "唯兔云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/v2yun/",
+    "summary": "入门级简单订阅机场，兼容各类 Clash 与 Shadowrocket 客户端。"
+  },
+  {
+    "title": "浪网机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/wavenet/",
+    "summary": "线路带宽充沛，全天候播放流畅无卡顿。"
+  },
+  {
+    "title": "无忧机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/worryfree/",
+    "summary": "主打无忧省心体验，节点配置简单，小白无需复杂设置。"
+  },
+  {
+    "title": "星岛梦机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/xingdaomeng/",
+    "summary": "提供多节点覆盖与灵活订阅，适合日常刷网页与视频。"
+  },
+  {
+    "title": "宇宙云机场测评：价格套餐、节点地区与优惠码",
+    "url": "/providers/yuzhou-cloud/",
+    "summary": "主打大流量套餐，适合经常下载与高清视频观看的用户。"
+  }
+]

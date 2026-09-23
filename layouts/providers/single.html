@@ -1,0 +1,39 @@
+{{ define "main" }}
+<article>
+  <div class="breadcrumbs">
+    <a href="/">首页</a> &gt; <a href="/providers/">机场测评库</a> &gt; <span>{{ .Title }}</span>
+  </div>
+
+  <h1>{{ .Title }}</h1>
+  <div class="article-meta">
+    核验日期：{{ if .Params.lastChecked }}{{ .Params.lastChecked }}{{ else }}2026-09-22{{ end }} | 综合评级：独立客观评估
+  </div>
+
+  <div style="background:#f0f4f8; border-left:4px solid #0056b3; padding:15px; margin:15px 0; border-radius:4px;">
+    <h3 style="margin:0 0 5px 0;">⚡ {{ .Title }} 核心选购摘要</h3>
+    <p style="margin:0; font-size:0.95rem;">
+      <strong>参考价格：</strong>{{ if .Params.priceFrom }}{{ .Params.priceFrom }}{{ else }}以结算页为准{{ end }} | 
+      <strong>流量配置：</strong>{{ if .Params.trafficFrom }}{{ .Params.trafficFrom }}{{ else }}以结算页为准{{ end }}<br>
+      <strong>专享优惠码：</strong><code style="color:#d9534f; font-weight:bold;">{{ if .Params.coupon }}{{ .Params.coupon }}{{ else }}暂无优惠码{{ end }}</code>
+    </p>
+    <div style="margin-top:10px;">
+      <a href="{{ .Params.inviteURL }}" target="_blank" rel="sponsored nofollow noopener" class="btn btn-coupon">使用优惠码进入结算页</a>
+      <a href="/posts/recommendation/" class="btn btn-secondary">返回对比总榜</a>
+    </div>
+  </div>
+
+  <div class="article-content" style="font-size:1.05rem; line-height:1.7;">
+    {{ .Content }}
+  </div>
+
+  <div style="margin-top:30px; border-top:1px solid #ddd; padding-top:15px;">
+    <h3>🔗 更多机场对比与教程</h3>
+    <ul>
+      <li><a href="/providers/quanqiu-cloud/">全球云 (QuanQiu Cloud) 深度测评与专线节点介绍</a></li>
+      <li><a href="/providers/flycat-cloud/">飞猫云 (FlyCat Cloud) 7元/月起性价比年付方案</a></li>
+      <li><a href="/posts/clash-verge-rev-beginner-tutorial/">Clash Verge Rev 零基础配置教程：从节点导入到规则分流</a></li>
+      <li><a href="/posts/beginner-guide-to-cross-firewall/">2026 新手魔法上网入门：梯子与机场如何选择？</a></li>
+    </ul>
+  </div>
+</article>
+{{ end }}

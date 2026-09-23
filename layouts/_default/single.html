@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article>
+  <div class="breadcrumbs">
+    <a href="/">首页</a> &gt; <a href="{{ .Section | relURL }}">{{ .Section }}</a> &gt; <span>{{ .Title }}</span>
+  </div>
+
+  <h1 style="margin-bottom:5px;">{{ .Title }}</h1>
+  
+  <div class="article-meta">
+    发布于 {{ .Date.Format "2006-01-02" }} | 更新于 {{ if .Lastmod }}{{ .Lastmod.Format "2006-01-02" }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }} | 编辑：机场推荐平台团队
+  </div>
+
+  {{ if .TableOfContents }}
+  <div class="toc-box">
+    <strong>目录</strong>
+    {{ .TableOfContents }}
+  </div>
+  {{ end }}
+
+  <div class="article-content" style="font-size:1.05rem; line-height:1.7;">
+    {{ .Content }}
+  </div>
+
+  <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:15px; margin-top:30px; border-radius:4px;">
+    <h3>📌 选型提示与自营服务推荐</h3>
+    <p>如果您不想花费大量时间折腾复杂的分流规则与订阅维护，可体验本站<a href="/service/">自营高可用专线加速服务</a>，提供全节点原生 IP、极致晚高峰低延迟与 24 小时运维支持。</p>
+    <div style="margin-top:10px;">
+      <a href="/service/" class="btn">了解自营服务</a>
+      <a href="/providers/lingdong-cloud/" class="btn btn-secondary">查看灵动云测评</a>
+    </div>
+  </div>
+</article>
+{{ end }}

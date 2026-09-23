@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section>
+  <div class="breadcrumbs">
+    <a href="/">首页</a> &gt; <span>28 家机场服务商全量测评库</span>
+  </div>
+
+  <h1>28 家机场服务商全量测评与优惠码汇总</h1>
+  <p style="color:#555;">收录 2026 年主流魔法上网机场节点服务商，包含详细节点地区、价格套餐、优惠码及客户端适配说明：</p>
+
+  <div class="provider-grid">
+    {{ range .Pages }}
+    <div class="provider-card">
+      <h3 class="provider-title">{{ .Title }}</h3>
+      <p style="font-size:0.85rem; color:#555;">
+        <strong>参考价格：</strong>{{ if .Params.priceFrom }}{{ .Params.priceFrom }}{{ else }}以结算页为准{{ end }}<br>
+        <strong>优惠码：</strong><code>{{ if .Params.coupon }}{{ .Params.coupon }}{{ else }}暂无优惠码{{ end }}</code>
+      </p>
+      <p style="font-size:0.9rem;">{{ .Summary | plainify | truncate 90 }}</p>
+      <a href="{{ .RelPermalink }}" class="btn btn-secondary">阅读测评</a>
+      {{ if .Params.inviteURL }}
+      <a href="{{ .Params.inviteURL }}" target="_blank" rel="sponsored nofollow noopener" class="btn btn-coupon">直达结算页</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

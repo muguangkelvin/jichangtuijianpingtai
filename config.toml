@@ -1,0 +1,28 @@
+baseURL = "https://jichangtuijianpingtai.xyz/"
+languageCode = "zh-cn"
+title = "机场推荐平台 - 节点评测与客户端配置指南"
+theme = "hugo-xmin"
+hasCJKLanguage = true
+
+[params]
+  description = "机场推荐平台专注为新手提供梯子推荐、魔法上网测速对比及 Clash、Sing-box、Shadowrocket 客户端配置全流程教程。"
+  keywords = ["机场推荐", "梯子推荐", "魔法上网", "魔法机场", "Clash教程", "Shadowrocket配置", "稳定翻墙"]
+  footer = "© 2026 机场推荐平台 · 纯静态加速与独立评测"
+
+[menu]
+  [[menu.main]]
+    name = "推荐指南"
+    url = "/posts/recommendation/"
+    weight = 1
+  [[menu.main]]
+    name = "客户端教程"
+    url = "/posts/tutorials/"
+    weight = 2
+  [[menu.main]]
+    name = "常见排错"
+    url = "/posts/faq/"
+    weight = 3
+  [[menu.main]]
+    name = "自营服务"
+    url = "/service/"
+    weight = 4

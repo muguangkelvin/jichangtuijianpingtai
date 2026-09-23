@@ -1,0 +1,35 @@
+<header>
+  <div class="header-brand-wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px;">
+    <div>
+      <a href="/" class="header-brand">机场推荐平台</a>
+      <div class="header-slogan">客观评测、小白友好、告别繁琐设置的节点与工具选择指南</div>
+    </div>
+    <div class="header-right-tools" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+      <!-- 搜索框与图标 -->
+      <div class="search-box" style="display:flex; align-items:center; border:1px solid var(--border-color); border-radius:6px; padding:5px 10px; background:#fff;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="搜索机场或教程..." style="border:none; outline:none; font-size:0.85rem; width:130px; background:transparent;">
+      </div>
+
+      <!-- TG 频道 Icon 按钮 -->
+      <a href="https://t.me/+6fo_zU8PHKVlMzZl" target="_blank" rel="noopener" class="header-icon-btn" style="display:inline-flex; align-items:center; gap:6px; padding:6px 12px; background:#0088cc; color:#fff; text-decoration:none; border-radius:6px; font-size:0.85rem; font-weight:500;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .54-1.43.53-.47-.01-1.37-.26-2.04-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.89 8.01-3.45 3.81-1.59 4.6-1.87 5.12-1.88.11 0 .37.03.54.18.14.12.18.28.2.45-.02.07-.02.13-.03.22z"/></svg>
+        <span>TG 频道</span>
+      </a>
+
+      <!-- GitHub Icon 按钮 -->
+      <a href="https://github.com" target="_blank" rel="noopener" class="header-icon-btn" style="display:inline-flex; align-items:center; gap:6px; padding:6px 12px; background:#24292e; color:#fff; text-decoration:none; border-radius:6px; font-size:0.85rem; font-weight:500;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+  <nav aria-label="主导航">
+    <a href="/" {{ if .IsHome }}aria-current="page"{{ end }}>首页</a>
+    <a href="/posts/recommendation/" {{ if eq .RelPermalink "/posts/recommendation/" }}aria-current="page"{{ end }}>推荐指南</a>
+    <a href="/posts/tutorials/" {{ if eq .RelPermalink "/posts/tutorials/" }}aria-current="page"{{ end }}>客户端教程</a>
+    <a href="/posts/faq/" {{ if eq .RelPermalink "/posts/faq/" }}aria-current="page"{{ end }}>常见排错</a>
+    <a href="/providers/" {{ if eq .RelPermalink "/providers/" }}aria-current="page"{{ end }}>机场评测库</a>
+    <a href="/service/" {{ if eq .RelPermalink "/service/" }}aria-current="page"{{ end }}>自营服务</a>
+  </nav>
+</header>
