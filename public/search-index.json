@@ -570,6 +570,11 @@
     "summary": "解析使用 ChatGPT、Claude 等生成式 AI 工具对节点 IP 质量、原生 IP 及风控防封的要求，并提供机场选购指南。"
   },
   {
+    "title": "2026 机场推荐与 Clash 机场选择指南：从避坑到高阶玩法",
+    "url": "/posts/clash-airport-selection-guide/",
+    "summary": "一份标准博客排版风格的《2026 机场推荐与 Clash 机场选择全指南》，涵盖选购逻辑、线路剖析与实操建议。"
+  },
+  {
     "title": "Clash Verge Rev 零基础配置教程：从节点导入到规则分流",
     "url": "/posts/clash-verge-rev-beginner-tutorial/",
     "summary": "手把手教你如何安装与配置 Clash Verge Rev 客户端，完成机场订阅导入、TUN 模式开启与规则分流设置。"
