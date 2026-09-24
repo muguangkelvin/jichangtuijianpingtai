@@ -1,7 +1,7 @@
 # 🚀 2026 机场推荐平台 | 稳定翻墙机场测速与客户端配置指南
 
 > **官方镜像与在线评测网站**：[机场推荐平台 (jichangtuijianpingtai.xyz)](https://jichangtuijianpingtai.xyz/)  
-> **Telegram 官方频道**：[点击订阅最新节点与优惠](https://t.me/+6fo_zU8PHKVlMzZl)  
+> **Telegram 官方频道**：[点击订阅最新节点与优惠](https://t.me/+mhFkczMyua0yM2Rl)  
 > **商务合作与联系邮箱**：`cees186003@outlook.com`
 
 ---
