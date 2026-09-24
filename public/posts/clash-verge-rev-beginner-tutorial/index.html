@@ -197,29 +197,29 @@
                       <p>Clash Verge Rev 是目前 Windows 与 macOS 平台上最受欢迎、开源免费且界面美观的跨平台网络代理客户端。相比于老旧的 Clash for Windows，Clash Verge Rev 维护积极，内核更新迅速，并全面支持内核级的 TUN 规则接管。</p>
 <p>本文由机场推荐平台为您带来零基础三步上手教程，协助您快速完成从下载客户端到订阅导入的全部流程。</p>
 <h2>一、 客户端下载与基础安装</h2>
-<p>1. <strong>获取安装包</strong>：前往官方开源仓库下载适配您系统版本的安装包（Windows 用户推荐 `.msi` 或 `.exe`，Mac 用户选择 `.dmg`）。</p>
-<p>2. <strong>切换界面语言</strong>：安装完成后打开软件，点击左侧菜单栏的 `Settings`（设置），找到 `Language` 选项，将其切换为 `简体中文`。</p>
-<p>3. <strong>开启系统代理</strong>：在主界面将 `系统代理` 按钮切换为开启状态，此时软件已具备代理功能。</p>
+<p>1. <strong>获取安装包</strong>：前往官方开源仓库下载适配您系统版本的安装包（Windows 用户推荐 <code>.msi</code> 或 <code>.exe</code>，Mac 用户选择 <code>.dmg</code>）。</p>
+<p>2. <strong>切换界面语言</strong>：安装完成后打开软件，点击左侧菜单栏的 <code>Settings</code>（设置），找到 <code>Language</code> 选项，将其切换为 <code>简体中文</code>。</p>
+<p>3. <strong>开启系统代理</strong>：在主界面将 <code>系统代理</code> 按钮切换为开启状态，此时软件已具备代理功能。</p>
 <h2>二、 复制与导入机场订阅</h2>
 <p>获取节点的关键步骤在于导入服务商提供的订阅链接：</p>
 <p>1. <strong>复制订阅</strong>：登录您的机场服务商后台，找到“一键导入 Clash 订阅”按钮或直接“复制 Clash 订阅链接”。</p>
-<p>2. <strong>粘贴导入</strong>：在 Clash Verge Rev 中点击左侧的 `订阅` 页面，在顶部文本框中粘贴刚才复制的订阅 URL，然后点击右侧的 `导入` 按钮。</p>
-<p>3. <strong>选择并应用</strong>：导入成功后，列表中会出现对应的配置文件卡片。鼠标右键点击该卡片选择 `使用`，即可激活该机场节点配置。</p>
+<p>2. <strong>粘贴导入</strong>：在 Clash Verge Rev 中点击左侧的 <code>订阅</code> 页面，在顶部文本框中粘贴刚才复制的订阅 URL，然后点击右侧的 <code>导入</code> 按钮。</p>
+<p>3. <strong>选择并应用</strong>：导入成功后，列表中会出现对应的配置文件卡片。鼠标右键点击该卡片选择 <code>使用</code>，即可激活该机场节点配置。</p>
 <p>在获取节点订阅步骤中，如果您尚未挑选到称心的服务商，建议搭配本站高可用专线节点：</p>
 <ul>
 <li><strong>灵动云 (LingDong Cloud)</strong>：首选推荐，完美支持一键导入 Clash Verge，原生 IP 高速分流。<a href="/providers/lingdong-cloud/">查看灵动云测评</a></li>
-<li><strong>暮光网络 (Twilight)</strong>：晚高峰 4K 影音跑满，优惠码 `mm88`。<a href="/providers/twilight/">查看暮光网络测评</a></li>
-<li><strong>飞猫云 (FlyCat Cloud)</strong>：折合 7 元/月，性价比高，内置一键导入按钮。优惠码 `flycat888`。<a href="/providers/flycat-cloud/">查看飞猫云测评</a></li>
+<li><strong>暮光网络 (Twilight)</strong>：晚高峰 4K 影音跑满，优惠码 <code>mm88</code>。<a href="/providers/twilight/">查看暮光网络测评</a></li>
+<li><strong>飞猫云 (FlyCat Cloud)</strong>：折合 7 元/月，性价比高，内置一键导入按钮。优惠码 <code>flycat888</code>。<a href="/providers/flycat-cloud/">查看飞猫云测评</a></li>
 <li><strong>微风网络 (BreezeNet)</strong>：日常轻量稳定，兼容常规配置。<a href="/providers/breezenet/">查看微风网络测评</a></li>
 </ul>
 <h2>三、 规则分流与高级 TUN 模式设置</h2>
-<p>为了保障国内网站直连、海外网站走代理，建议使用默认的 `Rule` (规则) 模式：</p>
+<p>为了保障国内网站直连、海外网站走代理，建议使用默认的 <code>Rule</code> (规则) 模式：</p>
 <ul>
 <li><strong>Rule 模式</strong>：自动识别百度、淘宝等国内流量走直连；YouTube、Google 走代理节点。</li>
 <li><strong>Global 模式</strong>：所有流量强制走代理节点。</li>
 <li><strong>Direct 模式</strong>：所有流量强制直连，不走代理。</li>
 </ul>
-<p>如果遇到游戏客户端、UWP 应用或第三方软件无法走代理的问题，可在设置中开启 `TUN 模式`。TUN 模式会在系统中创建虚拟网卡，实现全局流量无死角接管。</p>
+<p>如果遇到游戏客户端、UWP 应用或第三方软件无法走代理的问题，可在设置中开启 <code>TUN 模式</code>。TUN 模式会在系统中创建虚拟网卡，实现全局流量无死角接管。</p>
                       
                     <div class="trust-links-bar">
                       📖 编辑部透明指引：<a href="/methodology/">评测方法</a> | <a href="/corrections/">纠错与更新</a> | <a href="/terms/">服务条款</a> | <a href="/affiliate-disclosure/">联盟披露</a> | <a href="/contact/">联系我们</a>

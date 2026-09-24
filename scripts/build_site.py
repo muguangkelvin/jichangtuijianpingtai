@@ -298,6 +298,39 @@ def render_html_page(title, description, canonical_url, body_content, is_home=Fa
 </html>'''
     return header_html
 
+def render_table(lines, format_inline_fn):
+    if not lines:
+        return ""
+    
+    rows = []
+    for l in lines:
+        cells = [c.strip() for c in l.strip("|").split("|")]
+        rows.append(cells)
+
+    if len(rows) < 1:
+        return ""
+
+    table_html = '<div style="overflow-x:auto; margin:15px 0;"><table style="width:100%; border-collapse:collapse; text-align:left; font-size:0.9rem; border:1px solid #e2e8f0;">'
+    
+    # Header row
+    table_html += '<thead><tr style="background:#edf2f7; border-bottom:2px solid #cbd5e0;">'
+    for c in rows[0]:
+        table_html += f'<th style="padding:10px; border:1px solid #e2e8f0;">{format_inline_fn(c)}</th>'
+    table_html += '</tr></thead><tbody>'
+
+    # Data rows (skipping divider line if present)
+    for idx, r in enumerate(rows[1:]):
+        if all(set(cell.replace(":", "").replace("-", "").strip()) == set() for cell in r if cell):
+            continue
+        bg_style = ' style="background:#f7fafc;"' if idx % 2 == 1 else ''
+        table_html += f'<tr{bg_style}>'
+        for c in r:
+            table_html += f'<td style="padding:10px; border:1px solid #e2e8f0;">{format_inline_fn(c)}</td>'
+        table_html += '</tr>'
+
+    table_html += '</tbody></table></div>'
+    return table_html
+
 def parse_markdown(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
@@ -319,38 +352,101 @@ def parse_markdown(file_path):
 
     html_lines = []
     in_list = False
+    in_code_block = False
+    code_block_lines = []
+    in_table = False
+    table_lines = []
 
-    for line in body.strip().split("\n"):
+    def format_inline(text):
+        text = re.sub(r'`(.*?)`', r'<code>\1</code>', text)
+        text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', text)
+        def replace_link(m):
+            label, url = m.group(1), m.group(2)
+            if url.startswith("http://") or url.startswith("https://"):
+                return f'<a href="{url}" target="_blank" rel="sponsored nofollow noopener">{label}</a>'
+            return f'<a href="{url}">{label}</a>'
+        text = re.sub(r'\[(.*?)\]\((.*?)\)', replace_link, text)
+        return text
+
+    for line in body.split("\n"):
+        raw_line = line
         line_str = line.strip()
+
+        if line_str.startswith("```"):
+            if in_code_block:
+                code_content = "\n".join(code_block_lines)
+                html_lines.append(f'<pre style="background:#1e293b; color:#f8fafc; padding:15px; border-radius:6px; overflow-x:auto; font-family:monospace; font-size:0.85rem; line-height:1.45; margin:15px 0;"><code>{code_content}</code></pre>')
+                code_block_lines = []
+                in_code_block = False
+            else:
+                if in_list:
+                    html_lines.append("</ul>")
+                    in_list = False
+                in_code_block = True
+            continue
+
+        if in_code_block:
+            code_block_lines.append(raw_line)
+            continue
+
         if not line_str:
             if in_list:
                 html_lines.append("</ul>")
                 in_list = False
+            if in_table:
+                html_lines.append(render_table(table_lines, format_inline))
+                table_lines = []
+                in_table = False
+            continue
+
+        if line_str.startswith("|") and line_str.endswith("|"):
+            if in_list:
+                html_lines.append("</ul>")
+                in_list = False
+            in_table = True
+            table_lines.append(line_str)
+            continue
+
+        if in_table:
+            html_lines.append(render_table(table_lines, format_inline))
+            table_lines = []
+            in_table = False
+
+        if line_str.startswith("<"):
+            if in_list:
+                html_lines.append("</ul>")
+                in_list = False
+            html_lines.append(format_inline(line_str))
             continue
 
         if line_str.startswith("# "):
-            html_lines.append(f"<h1>{line_str[2:]}</h1>")
+            html_lines.append(f"<h1>{format_inline(line_str[2:])}</h1>")
         elif line_str.startswith("## "):
-            html_lines.append(f"<h2>{line_str[3:]}</h2>")
+            html_lines.append(f"<h2>{format_inline(line_str[3:])}</h2>")
         elif line_str.startswith("### "):
-            html_lines.append(f"<h3>{line_str[4:]}</h3>")
+            html_lines.append(f"<h3>{format_inline(line_str[4:])}</h3>")
+        elif line_str.startswith("#### "):
+            html_lines.append(f"<h4>{format_inline(line_str[5:])}</h4>")
+        elif line_str.startswith("> "):
+            if in_list:
+                html_lines.append("</ul>")
+                in_list = False
+            html_lines.append(f'<blockquote style="border-left:4px solid #0056b3; background:#f8fafc; padding:10px 15px; margin:15px 0; color:#334155;">{format_inline(line_str[2:])}</blockquote>')
         elif line_str.startswith("- ") or line_str.startswith("* "):
             if not in_list:
                 html_lines.append("<ul>")
                 in_list = True
-            text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', line_str[2:])
-            text = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', text)
-            html_lines.append(f"<li>{text}</li>")
+            html_lines.append(f"<li>{format_inline(line_str[2:])}</li>")
         else:
             if in_list:
                 html_lines.append("</ul>")
                 in_list = False
-            text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', line_str)
-            text = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', text)
-            html_lines.append(f"<p>{text}</p>")
+            html_lines.append(f"<p>{format_inline(line_str)}</p>")
 
     if in_list:
         html_lines.append("</ul>")
+    if in_table:
+        html_lines.append(render_table(table_lines, format_inline))
 
     return front_matter, "\n".join(html_lines)
 
