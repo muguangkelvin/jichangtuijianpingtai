@@ -2,7 +2,7 @@
 
 > **官方镜像与在线评测网站**：[机场推荐平台 (jichangtuijianpingtai.xyz)](https://jichangtuijianpingtai.xyz/)  
 > **Telegram 官方频道**：[点击订阅最新节点与优惠](https://t.me/+6fo_zU8PHKVlMzZl)  
-> **商务合作**：Telegram `@lingdong01` | **官方邮箱**：`cees186003@outlook.com`
+> **商务合作与联系邮箱**：`cees186003@outlook.com`
 
 ---
 
