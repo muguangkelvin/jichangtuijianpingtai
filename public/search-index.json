@@ -592,7 +592,7 @@
   {
     "title": "客户端教程 - Clash、Sing-box、Shadowrocket 全平台指南",
     "url": "/posts/tutorials/",
-    "summary": "提供 Windows、macOS、iOS 及 Android 平台最全代理客户端安装与订阅导入教程。"
+    "summary": "系统梳理 Clash、Sing-box、Shadowrocket 三大主流代理客户端的核心特性、选型矩阵、全平台配置步骤及常见报错排查技巧。"
   },
   {
     "title": "一翻云 (1fly) 机场独立测评：套餐价格、节点地区、支付方式与 VPN 测速指南",
