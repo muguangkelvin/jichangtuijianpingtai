@@ -659,15 +659,59 @@ def build():
                       <p style="font-size:0.9rem; color:#666;">编辑部优先推荐的 4 大固定高可用服务，支持原生IP解锁与全客户端订阅导入：</p>
                       {top4_html}
                     </section>
-                    <section style="margin-top:30px;">
-                      <h2>📚 核心精选指南与客户端配置</h2>
-                      <ul>
-                        <li><a href="/posts/clash-airport-selection-guide/"><strong>2026 机场推荐与 Clash 机场选择指南：从避坑到高阶玩法</strong></a></li>
-                        <li><a href="/posts/beginner-guide-to-cross-firewall/"><strong>2026 新手魔法上网入门：梯子与机场如何选择？（附选型清单）</strong></a></li>
-                        <li><a href="/posts/clash-verge-rev-beginner-tutorial/"><strong>Clash Verge Rev 零基础配置教程：从节点导入到规则分流</strong></a></li>
-                        <li><a href="/posts/airport-node-timeout-troubleshooting/"><strong>节点超时与订阅无法更新？魔法机场新手常见 5 大故障排查</strong></a></li>
-                        <li><a href="/posts/best-proxy-for-chatgpt-and-claude/"><strong>流畅使用 AI 工具：ChatGPT 与 Claude 专线机场选购要点</strong></a></li>
-                      </ul>
+                    <section style="margin-top:35px;">
+                      <h2 style="font-size:1.4rem; color:#0f172a; margin-bottom:15px; border-bottom:2px solid #0056b3; padding-bottom:8px;">📚 核心精选指南与客户端配置</h2>
+                      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:16px; margin-top:15px;">
+                        <!-- Guide 1 -->
+                        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:18px; box-shadow:0 1px 4px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition: transform 0.2s;">
+                          <div>
+                            <span style="background:#dbeafe; color:#1e40af; font-size:0.75rem; font-weight:bold; padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px;">💡 选购必读</span>
+                            <h3 style="font-size:1.05rem; margin:0 0 8px 0; line-height:1.45;"><a href="/posts/clash-airport-selection-guide/" style="color:#0056b3; text-decoration:none; font-weight:bold;">2026 机场推荐与 Clash 机场选择指南：从避坑到高阶玩法</a></h3>
+                            <p style="font-size:0.86rem; color:#64748b; margin:0 0 12px 0; line-height:1.55;">深入解析 IPLC/IEPL 物理专线与中转线路差异，提供 4 大选购黄金法则与实操建议。</p>
+                          </div>
+                          <a href="/posts/clash-airport-selection-guide/" style="font-size:0.86rem; color:#0056b3; font-weight:bold; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">阅读指南全文 &rarr;</a>
+                        </div>
+
+                        <!-- Guide 2 -->
+                        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:18px; box-shadow:0 1px 4px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+                          <div>
+                            <span style="background:#e0e7ff; color:#3730a3; font-size:0.75rem; font-weight:bold; padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px;">🔰 新手入门</span>
+                            <h3 style="font-size:1.05rem; margin:0 0 8px 0; line-height:1.45;"><a href="/posts/beginner-guide-to-cross-firewall/" style="color:#0056b3; text-decoration:none; font-weight:bold;">2026 新手魔法上网入门：梯子与机场如何选择？（附选型清单）</a></h3>
+                            <p style="font-size:0.86rem; color:#64748b; margin:0 0 12px 0; line-height:1.55;">解决新手选型痛点，防踩坑必读选型清单与防跑路注意事项。</p>
+                          </div>
+                          <a href="/posts/beginner-guide-to-cross-firewall/" style="font-size:0.86rem; color:#0056b3; font-weight:bold; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">阅读指南全文 &rarr;</a>
+                        </div>
+
+                        <!-- Guide 3 -->
+                        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:18px; box-shadow:0 1px 4px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+                          <div>
+                            <span style="background:#dcfce7; color:#166534; font-size:0.75rem; font-weight:bold; padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px;">🔧 客户端教程</span>
+                            <h3 style="font-size:1.05rem; margin:0 0 8px 0; line-height:1.45;"><a href="/posts/clash-verge-rev-beginner-tutorial/" style="color:#0056b3; text-decoration:none; font-weight:bold;">Clash Verge Rev 零基础配置教程：从节点导入到规则分流</a></h3>
+                            <p style="font-size:0.86rem; color:#64748b; margin:0 0 12px 0; line-height:1.55;">Windows/Mac 最强免费客户端手把手导入与 TUN 模式分流配置教学。</p>
+                          </div>
+                          <a href="/posts/clash-verge-rev-beginner-tutorial/" style="font-size:0.86rem; color:#0056b3; font-weight:bold; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">阅读教程全文 &rarr;</a>
+                        </div>
+
+                        <!-- Guide 4 -->
+                        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:18px; box-shadow:0 1px 4px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+                          <div>
+                            <span style="background:#fef3c7; color:#92400e; font-size:0.75rem; font-weight:bold; padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px;">🛠️ 常见排错</span>
+                            <h3 style="font-size:1.05rem; margin:0 0 8px 0; line-height:1.45;"><a href="/posts/airport-node-timeout-troubleshooting/" style="color:#0056b3; text-decoration:none; font-weight:bold;">节点超时与订阅无法更新？魔法机场新手常见 5 大故障排查</a></h3>
+                            <p style="font-size:0.86rem; color:#64748b; margin:0 0 12px 0; line-height:1.55;">快速解决 DNS 污染、订阅拉取失败、TUN 网卡冲突与防失联知识。</p>
+                          </div>
+                          <a href="/posts/airport-node-timeout-troubleshooting/" style="font-size:0.86rem; color:#0056b3; font-weight:bold; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">查看排错指南 &rarr;</a>
+                        </div>
+
+                        <!-- Guide 5 -->
+                        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:18px; box-shadow:0 1px 4px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+                          <div>
+                            <span style="background:#f3e8ff; color:#6b21a8; font-size:0.75rem; font-weight:bold; padding:3px 8px; border-radius:4px; display:inline-block; margin-bottom:10px;">🤖 AI 解锁专线</span>
+                            <h3 style="font-size:1.05rem; margin:0 0 8px 0; line-height:1.45;"><a href="/posts/best-proxy-for-chatgpt-and-claude/" style="color:#0056b3; text-decoration:none; font-weight:bold;">流畅使用 AI 工具：ChatGPT 与 Claude 专线机场选购要点</a></h3>
+                            <p style="font-size:0.86rem; color:#64748b; margin:0 0 12px 0; line-height:1.55;">避免 Access Denied 报错，原生 IP、家庭独享 IP 及高风控模型解封配置。</p>
+                          </div>
+                          <a href="/posts/best-proxy-for-chatgpt-and-claude/" style="font-size:0.86rem; color:#0056b3; font-weight:bold; text-decoration:none; display:inline-flex; align-items:center; gap:4px;">阅读选购要点 &rarr;</a>
+                        </div>
+                      </div>
                     </section>
                     <section style="margin-top:30px;">
                       <h2>🌐 28 家机场服务商全量测评库</h2>
