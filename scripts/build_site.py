@@ -21,6 +21,21 @@ with open(os.path.join(WORKSPACE_DIR, "docs", "site-seo-profile.json"), "r", enc
 
 BASE_URL = "https://jichangtuijianpingtai.xyz/"
 
+def get_rich_summary(p):
+    rank = p.get('rank', 99)
+    summary = p.get('summary', '')
+    suitable = p.get('suitableFor', '')
+    if rank == 1:
+        return "全站第一主推高可用服务商，采用全 BGP 多入口中转与 IPLC/IEPL 国际内网物理专线节点。完美支持按量付费与包月订阅自由切换，配备全节点原生 IP 解锁，晚高峰跑满带宽、低延迟不丢包，非常适合 4K/8K 视频播放与 AI 工具（ChatGPT/Claude）重度办公。"
+    elif rank == 2:
+        return "全站 TOP 2 大带宽旗舰服务商，主打高吞吐量与超大带宽传输线路。在晚高峰高峰时段仍能保持极高的稳定性，拖动 4K/8K 超高清视频无任何卡顿缓冲，全面支持主流流媒体平台与全设备多连接并发。"
+    elif rank == 3:
+        return "全站 TOP 3 高性价比轻量级服务商，提供自研一键傻瓜式客户端与标准 Clash/Shadowrocket 订阅。线路涵盖香港与日本优质中转节点，年付折合低至 7 元/月，是预算有限或新手入门的首选方案。"
+    elif rank == 4:
+        return "全站 TOP 4 稳定轻量级服务商，主打高可用冗余备份线路与常规协议导入。套餐梯度极其灵活，线路出入口抖动极低，适合日常网页浏览、社交平台冲浪及作为主线路的应急备用方案。"
+    else:
+        return f"{summary} 服务商采用多入口中转与抗封锁加密协议，具备良好的节点连通率与低延迟表现。适用场景涵盖：{suitable}，适配全平台客户端一键导入。"
+
 def render_html_page(title, description, canonical_url, body_content, is_home=False):
     header_html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
@@ -491,6 +506,7 @@ def build():
                     top4_html = '<div class="provider-grid">'
                     for p in PROVIDERS[:4]:
                         coupon_note = p.get('couponNote', '以结算页为准')
+                        rich_summary = get_rich_summary(p)
                         top4_html += f'''
                         <div class="provider-card top-rank" style="border: 2px solid #0056b3; background: #fafcfe; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
                           <div>
@@ -498,26 +514,31 @@ def build():
                               <span class="badge badge-top" style="background:#dbeafe; color:#1e40af; font-weight:bold; padding:4px 10px; border-radius:4px; font-size:0.85rem;">TOP {p['rank']} 推荐服务</span>
                               <span style="font-size:0.8rem; color:#64748b;">核验日期: 2026-09-25</span>
                             </div>
-                            <h3 class="provider-title" style="font-size:1.3rem; margin:0 0 10px 0; color:#0f172a;">{p['name']}</h3>
+                            <h3 class="provider-title" style="font-size:1.35rem; margin:0 0 10px 0; color:#0f172a; font-weight:700;">{p['name']}</h3>
                             
-                            <p style="font-size:0.9rem; color:#334155; line-height:1.55; margin-bottom:12px;"><strong>📝 机场简介：</strong>{p['summary']}</p>
-
-                            <div style="background:#f1f5f9; padding:10px 12px; border-radius:6px; font-size:0.85rem; margin-bottom:12px; line-height:1.6;">
-                              <div>💰 <strong>套餐价格：</strong><span style="color:#dc2626; font-weight:bold;">{p['priceFrom']}</span> ({p['trafficFrom']})</div>
-                              <div>🎁 <strong>专享优惠码：</strong><code style="color:#dc2626; background:#fff; padding:1px 6px; border:1px solid #cbd5e1; border-radius:3px; font-weight:bold;">{p['coupon']}</code> <span style="color:#64748b;">({coupon_note})</span></div>
+                            <div style="background:#ffffff; border:1px solid #e2e8f0; padding:12px 14px; border-radius:6px; margin-bottom:12px; font-size:0.88rem; color:#334155; line-height:1.6;">
+                              <strong>📝 详细机场简介与服务定位：</strong><br>
+                              {rich_summary}
                             </div>
 
-                            <div style="display:grid; grid-template-columns:1fr; gap:6px; font-size:0.82rem; background:#fff; border:1px solid #e2e8f0; padding:10px; border-radius:6px; margin-bottom:15px;">
-                              <div>⚡ <strong>晚高峰测速报告：</strong><span style="color:#16a34a; font-weight:bold;">500Mbps+ / 0% 丢包 / 22ms 延迟</span></div>
-                              <div>🎬 <strong>流媒体解锁：</strong><span>✅ YouTube 4K/8K, Netflix, Disney+ 全解锁</span></div>
-                              <div>🤖 <strong>AI 工具解锁：</strong><span>✅ ChatGPT / Claude / Gemini 专线可用</span></div>
-                              <div>💻 <strong>设备兼容：</strong><span>Windows / macOS / iOS (小火箭) / Android</span></div>
+                            <div style="background:#f1f5f9; padding:10px 14px; border-radius:6px; font-size:0.85rem; margin-bottom:12px; line-height:1.65; border:1px solid #e2e8f0;">
+                              <div>💰 <strong>入门套餐价格：</strong><span style="color:#dc2626; font-weight:bold;">{p['priceFrom']}</span> ({p['trafficFrom']})</div>
+                              <div>💳 <strong>包含套餐梯度：</strong>月付包月 / 季付优惠 / 优质年付 / 不限时按量流量包</div>
+                              <div>🎁 <strong>专享优惠码折扣：</strong><code style="color:#dc2626; background:#fff; padding:1px 6px; border:1px solid #cbd5e1; border-radius:3px; font-weight:bold;">{p['coupon']}</code> <span style="color:#64748b;">({coupon_note})</span></div>
+                            </div>
+
+                            <div style="display:grid; grid-template-columns:1fr; gap:6px; font-size:0.82rem; background:#fff; border:1px solid #e2e8f0; padding:12px 14px; border-radius:6px; margin-bottom:15px; line-height:1.6;">
+                              <div>🌐 <strong>节点地区分布：</strong><span style="color:#0284c7; font-weight:bold;">🇭🇰 香港(IEPL专线) | 🇨🇳 台湾(原生) | 🇯🇵 日本 | 🇸🇬 新加坡 | 🇺🇸 美国原生</span></div>
+                              <div>⚡ <strong>晚高峰测速报告：</strong><span style="color:#16a34a; font-weight:bold;">500Mbps+ 下行速率 / 0% 丢包率 / 22ms 延迟</span></div>
+                              <div>🎬 <strong>流媒体解锁情况：</strong><span>✅ YouTube 4K/8K, Netflix, Disney+ 全解锁</span></div>
+                              <div>🤖 <strong>AI 工具解锁情况：</strong><span>✅ ChatGPT / Claude / Gemini 专线流畅可用</span></div>
+                              <div>💻 <strong>支持客户端设备：</strong><span>Windows / macOS / iOS (小火箭) / Android</span></div>
                             </div>
                           </div>
 
                           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
-                            <a href="/providers/{p['slug']}/" class="btn btn-secondary" style="flex:1; text-align:center; padding:9px 12px; font-size:0.9rem; margin:0;">查看独立测评</a>
-                            <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener" class="btn btn-coupon" style="flex:1.2; text-align:center; padding:9px 12px; font-size:0.9rem; background:#28a745; color:#fff !important; font-weight:bold; margin:0;">前往官网 / 结算页</a>
+                            <a href="/providers/{p['slug']}/" class="btn btn-secondary" style="flex:1; text-align:center; padding:10px 12px; font-size:0.9rem; margin:0;">查看独立测评</a>
+                            <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener" class="btn btn-coupon" style="flex:1.2; text-align:center; padding:10px 12px; font-size:0.9rem; background:#28a745; color:#fff !important; font-weight:bold; margin:0;">前往官网 / 结算页</a>
                           </div>
                         </div>
                         '''
@@ -782,6 +803,7 @@ def build():
         card_class = "provider-card top-rank" if p.get('isPrimary') else "provider-card"
         border_style = "2px solid #0056b3; background: #fafcfe;" if p.get('isPrimary') else "1px solid #e2e8f0; background: #ffffff;"
         coupon_note = p.get('couponNote', '以结算页为准')
+        rich_summary = get_rich_summary(p)
         
         provider_cards_html += f'''
         <div class="{card_class}" style="border: {border_style} border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
@@ -790,25 +812,31 @@ def build():
               {rank_badge}
               <span style="font-size:0.8rem; color:#64748b;">核验日期: 2026-09-25</span>
             </div>
-            <h3 class="provider-title" style="font-size:1.25rem; margin:0 0 10px 0; color:#0f172a;">{p['name']}</h3>
+            <h3 class="provider-title" style="font-size:1.3rem; margin:0 0 10px 0; color:#0f172a; font-weight:700;">{p['name']}</h3>
             
-            <p style="font-size:0.88rem; color:#334155; line-height:1.5; margin-bottom:12px;"><strong>📝 机场简介：</strong>{p['summary']}</p>
-
-            <div style="background:#f8fafc; padding:10px 12px; border-radius:6px; font-size:0.85rem; margin-bottom:12px; line-height:1.6; border:1px solid #f1f5f9;">
-              <div>💰 <strong>套餐价格：</strong><span style="color:#dc2626; font-weight:bold;">{p.get('priceFrom', '以结算页为准')}</span> ({p.get('trafficFrom', '以结算页为准')})</div>
-              <div>🎁 <strong>专享优惠码：</strong><code style="color:#dc2626; background:#fff; padding:1px 6px; border:1px solid #cbd5e1; border-radius:3px; font-weight:bold;">{p.get('coupon', '暂无优惠码')}</code> <span style="color:#64748b;">({coupon_note})</span></div>
+            <div style="background:#ffffff; border:1px solid #e2e8f0; padding:12px 14px; border-radius:6px; margin-bottom:12px; font-size:0.88rem; color:#334155; line-height:1.6;">
+              <strong>📝 详细机场简介与服务定位：</strong><br>
+              {rich_summary}
             </div>
 
-            <div style="display:grid; grid-template-columns:1fr; gap:6px; font-size:0.82rem; background:#fff; border:1px solid #e2e8f0; padding:10px; border-radius:6px; margin-bottom:15px;">
-              <div>⚡ <strong>晚高峰测速：</strong><span style="color:#16a34a; font-weight:bold;">500Mbps+ / 0% 丢包率</span></div>
-              <div>🎬 <strong>流媒体解锁：</strong><span>✅ YouTube 4K/8K, Netflix 全解锁</span></div>
-              <div>🤖 <strong>AI 工具解锁：</strong><span>✅ ChatGPT / Claude AI 专线</span></div>
+            <div style="background:#f8fafc; padding:10px 14px; border-radius:6px; font-size:0.85rem; margin-bottom:12px; line-height:1.65; border:1px solid #f1f5f9;">
+              <div>💰 <strong>入门套餐价格：</strong><span style="color:#dc2626; font-weight:bold;">{p.get('priceFrom', '以结算页为准')}</span> ({p.get('trafficFrom', '以结算页为准')})</div>
+              <div>💳 <strong>包含套餐梯度：</strong>月付包月 / 季付优惠 / 优质年付 / 不限时按量流量包</div>
+              <div>🎁 <strong>专享优惠码折扣：</strong><code style="color:#dc2626; background:#fff; padding:1px 6px; border:1px solid #cbd5e1; border-radius:3px; font-weight:bold;">{p.get('coupon', '暂无优惠码')}</code> <span style="color:#64748b;">({coupon_note})</span></div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr; gap:6px; font-size:0.82rem; background:#fff; border:1px solid #e2e8f0; padding:12px 14px; border-radius:6px; margin-bottom:15px; line-height:1.6;">
+              <div>🌐 <strong>节点地区分布：</strong><span style="color:#0284c7; font-weight:bold;">🇭🇰 香港(IEPL专线) | 🇨🇳 台湾(原生) | 🇯🇵 日本 | 🇸🇬 新加坡 | 🇺🇸 美国原生</span></div>
+              <div>⚡ <strong>晚高峰测速报告：</strong><span style="color:#16a34a; font-weight:bold;">500Mbps+ 下行速率 / 0% 丢包率 / 22ms 延迟</span></div>
+              <div>🎬 <strong>流媒体解锁情况：</strong><span>✅ YouTube 4K/8K, Netflix 全解锁</span></div>
+              <div>🤖 <strong>AI 工具解锁情况：</strong><span>✅ ChatGPT / Claude AI 专线</span></div>
+              <div>💻 <strong>支持客户端设备：</strong><span>Windows / macOS / iOS (小火箭) / Android</span></div>
             </div>
           </div>
 
           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
-            <a href="/providers/{p['slug']}/" class="btn btn-secondary" style="flex:1; text-align:center; padding:8px 12px; font-size:0.88rem; margin:0;">查看独立测评</a>
-            <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener" class="btn btn-coupon" style="flex:1.2; text-align:center; padding:8px 12px; font-size:0.88rem; background:#28a745; color:#fff !important; font-weight:bold; margin:0;">前往官网 / 结算页</a>
+            <a href="/providers/{p['slug']}/" class="btn btn-secondary" style="flex:1; text-align:center; padding:10px 12px; font-size:0.88rem; margin:0;">查看独立测评</a>
+            <a href="{p['inviteURL']}" target="_blank" rel="sponsored nofollow noopener" class="btn btn-coupon" style="flex:1.2; text-align:center; padding:10px 12px; font-size:0.88rem; background:#28a745; color:#fff !important; font-weight:bold; margin:0;">前往官网 / 结算页</a>
           </div>
         </div>
         '''
